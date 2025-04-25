@@ -1,0 +1,114 @@
+body{
+    font-family: sans-serif;
+    margin:20px;
+    background-color: #e3cae7;
+    color: #040000;
+    line-height: 1.6;
+}
+h1{
+    text-align:left;
+    vertical-align:text-top;
+    margin-bottom: 2px;
+    font-size: 48px;
+}
+h4{
+    text-align: center;
+    font-size:18px;
+
+}
+
+#search-bar{
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.lyric-entry{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #007acc;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: background-color 0.2s;
+}
+
+.note-entry{
+    margin-bottom: 20px;
+    padding: 10px;
+    border-right: 4px solid #007acc;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0, 0.05);
+    transition: background-color 0.2s;
+}
+
+.lyrics-entry:hover{
+    background-color: #f0f8ff;
+}
+
+.japanese{
+    font-weight: bold;
+    color: #007acc;
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+.chinese{
+    font-style: italic;
+    margin-top: 5px;
+    color: #444;
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+.japanese_note{
+    font-weight:bold;
+    color: #007acc;
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+.chinese_note{
+    font-style: italic;
+    margin-top: 5px;
+    color: #444;
+    white-space: pre-wrap;
+    font-size: 24px;
+}
+
+.song-entry{
+    margin: 20px 0;
+}
+
+#homepage-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#content-container{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#lyrics-container, #notes-container{
+    flex: 1;
+}
+
+#notes-container{
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+#audio-player{
+    position: absolute;  
+    top: 20px;
+    right: 20px;  
+    vertical-align: top;
+}
