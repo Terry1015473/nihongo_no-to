@@ -1,0 +1,66 @@
+{
+    "type":"note",
+    "title": "0418ハイキュー!!ゴミ捨て場の決戦",
+    "artist": "ヨン",
+    "audio": "audio/tabun.mp3",
+    "lyrics": [
+        {
+            "japanese":"悔しがる",
+            "chinese":"悔恨, 遺憾"
+        },
+        {
+            "japanese":"だが",
+            "chinese":"但是, 可是"
+        },
+        {
+            "japanese":"応える",
+            "chinese":"反應"
+        },
+        {
+            "japanese":"分断",
+            "chinese":"分割, 切斷"
+        },
+        {
+            "japanese":"多少",
+            "chinese":"多少, 多寡"
+        },
+        {
+            "japanese":"じっと",
+            "chinese":"保持穩定, 一動不動"
+        },
+        {
+            "japanese":"分析",
+            "chinese":"分析"
+        },
+        {
+            "japanese":"なにやら",
+            "chinese":"不知為何, 總有些"
+        },
+        {
+            "japanese":"移る",
+            "chinese":"移動, 搬家"
+        },
+        {
+            "japanese":"いつだって",
+            "chinese":"無論何時"
+        },
+        {
+            "japanese":"見守る",
+            "chinese":"注視"
+        },
+        {
+            "japanese":"睨む",
+            "chinese":"注視, 盯視"
+        }
+    ],
+    "notes":[
+        {
+            "japanese":"多少なりとも",
+            "chinese":"多少會"
+        },
+        {
+            "japanese":"さほど～ない",
+            "chinese":"沒有那麼地~"
+        }
+    ]
+}
