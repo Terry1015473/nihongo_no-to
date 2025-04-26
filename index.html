@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"content="width=device-width", initial-scale="1.0">
+    <title>日本語勉強ノート</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tom Select CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+
+    <!-- Tom Select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Sakura JS-->
+    <script src="https://unpkg.com/sakura-js/dist/sakura.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+</head>
+<body>
+    <h1_title>日本語勉強ノート</h1_title>
+    <img src="cover.jpg" id="homepage-img" alt="首頁圖片">
+
+    <div class="container">
+        <div id="cat-animation"></div>
+        <select id="song-select" placeholder="請搜尋歌曲...">
+          <option value="">ノートを選択してください</option>
+        </select>
+    </div>
+    
+    <div id="content-container">
+        <div id="lyrics-container"></div>
+        <div id="notes-container"></div>
+    </div>
+    
+    <audio id="audio-player" controls style="display: none;" controlsList = "none"></audio>
+    <footer id="about-section">
+        <h3>このサイトの成り立ち</h3>
+        <p>日本の生活に憧れを持てるのせいで日本語の勉強が始まります，ここですべての学習を記入しています！</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
