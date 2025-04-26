@@ -1,14 +1,28 @@
 let songSelect;
+let allSongs = [];
 
-fetch('lyrics.json')
+fetch('data/index.json')
     .then(response => response.json())
-    .then(data => {
-        allSongs = data;
-        populateDropdown(data);
-    });
+    .then(fileList => {
+        return Promise.all(
+            fileList.map(file => fetch('data/' + file).then(res => res.json()))
+        );
+    })
+    .then(datas => {
+        allSongs = datas;
+        populateDropdown(allSongs);
+    })
+    .catch(error => console.error('載入資料錯誤:',error));
 
 function populateDropdown(songs){
     const select = document.getElementById('song-select');
+    select.innerHTML = '';
+
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = 'ノートを選択してください';
+    select.appendChild(defaultOption);
+
     songs.forEach((song, index) => {
         const option = document.createElement('option');
         option.value = index;
@@ -18,7 +32,7 @@ function populateDropdown(songs){
 
     if (!songSelect) {
         songSelect = new TomSelect('#song-select', {
-            maxOptions: 10,
+            maxOptions: 50,
             placeholder: '請搜尋歌曲...',
             allowEmptyOption: true
         });
@@ -100,14 +114,72 @@ function playAudio(audioSrc){
         player.onended = null;
     }
 }
+function showNotes(song){
+    const container = document.getElementById('lyrics-container');
+    container.innerHTML = '';
+
+    const title = document.createElement('h1');
+    title.textContent = `${song.title} - 単語`;
+    container.appendChild(title);
+
+    song.lyrics.forEach(entry => {
+        const div = document.createElement('div');
+        div.className = 'lyric-entry';
+
+        const jp = document.createElement('div');
+        jp.className = 'japanese';
+        jp.textContent = entry.japanese;
+
+        const zh = document.createElement('div');
+        zh.className = 'chinese';
+        zh.textContent = entry.chinese;
+
+        div.appendChild(jp);
+        div.appendChild(zh);
+        container.appendChild(div);
+    });
+    showGrammer(song);
+}
+function showGrammer(song){
+    const container = document.getElementById('notes-container');
+    container.innerHTML = '';
+
+    const title = document.createElement('h1');
+    title.textContent = '文法など';
+    container.appendChild(title);
+
+    song.notes.forEach(entry =>{
+        const div = document.createElement('div');
+        div.className = 'note-entry';
+
+        const jp = document.createElement('div');
+        jp.className = 'japanese_note';
+        jp.textContent = entry.japanese;
+
+        const zh = document.createElement('div');
+        zh.className = 'chinese_note';
+        zh.textContent = entry.chinese;
+
+        div.appendChild(jp);
+        div.appendChild(zh);
+        container.appendChild(div);
+    });
+}
 
 document.getElementById('song-select').addEventListener('change', (e) =>{
     const index = e.target.value;
     if (index === "") return;
 
     const song = allSongs[index];
-    showLyrics(song);
-    playAudio(song.audio);
+    if (song.type == "song"){
+        showLyrics(song);
+        playAudio(song.audio);
+    }
+    else if (song.type == "note"){
+        showNotes(song);
+        playAudio(song.audio);
+    }
+    
 });
 
 window.addEventListener('DOMContentLoaded', () => {
