@@ -181,8 +181,96 @@
                 "chinese":"告別"
             },
             {
-                "japanese":"育てる v.",
+                "japanese":"育てる v. そだてる",
                 "chinese":"培育;扶養"
+            },
+            {
+                "japanese":"奪う v. うばう",
+                "chinese":"奪走、奪去"
+            },
+            {
+                "japanese":"勘違い n. かんちがい",
+                "chinese":"誤會、錯認;錯估"
+            },
+            {
+                "japanese":"戸惑い n. とまどい",
+                "chinese":"困惑;迷失方向"
+            },
+            {
+                "japanese":"N./Adj./V.る + くらい.\n Ex: 泣きたいくらい感動しました",
+                "chinese":"表程度. \n Ex: 感動到想哭"
+            },
+            {
+                "japanese":"N/V./Adj + とする/とすれば/としたら. \n Ex:毎日が休日だとしたら,何したい？",
+                "chinese":"假設~. \n Ex:如果每天都是假日的話，你想做甚麼?"
+            },
+            {
+                "japanese":"伝わる n. つたわる",
+                "chinese":"傳播, 流傳, 傳入"
+            },
+            {
+                "japanese":"V假定形 + V普通形 + より \n 1. = V假定形 + V普通形 + ほど. \n Ex: 見れば見るより、彼のことが気になってくる \n 2. V假定形 + V普通形 + より\n Ex:あなたが思えば思うよりいくつも あたしは意気地ないのに",
+                "chinese":" 1. 越~越~. \n Ex:越看越在意他\n 2. 比~還~. \n Ex:我其實比你想像的還要更加懦弱"
+            },
+            {
+                "japanese":"綻び n. ほころび",
+                "chinese":"裂縫, 撕裂"
+            },
+            {
+                "japanese":"ぼやける v.",
+                "chinese":"模糊"
+            },
+            {
+                "japanese":"溢れる v. あふれる",
+                "chinese":"溢出, 充滿"
+            },
+            {
+                "japanese":"彷徨う v. さまよう",
+                "chinese":"徬徨, 徘徊; 躊躇, 遲疑不決"
+            },
+            {
+                "japanese":"身代わり n. みがわり",
+                "chinese":"替身, 代替別人"
+            },
+            {
+                "japanese":"細やか adj. ささやか",
+                "chinese":"細小, 微小; 微薄, 簡單"
+            },
+            {
+                "japanese":"V普通形 + ふり. \n Ex:見たら見ないふりしね",
+                "chinese":"~的樣子. \n Ex: 看到的話就裝作沒看到吧"
+            },
+            {
+                "japanese":"繰り返す v. くりかえす",
+                "chinese":"重複, 反覆"
+            },
+            {
+                "japanese":"惨憺たる 形動. さんたんたる",
+                "chinese":"悽慘, 悲慘, 慘淡"
+            },
+            {
+                "japanese":"歪み n. ひずみ",
+                "chinese":"歪斜, 扭曲變形; 不良影響"
+            },
+            {
+                "japanese":"不甲斐ない adj. ふがいない",
+                "chinese":"不中用的, 窩囊的"
+            },
+            {
+                "japanese":"瞼 n. まぶた",
+                "chinese":"臉; 眼瞼"
+            },
+            {
+                "japanese":"鮮やか adj. あざやか",
+                "chinese":"鮮豔; 精彩; 漂亮"
+            },
+            {
+                "japanese":"彩る v. いろどる",
+                "chinese":"上色; 裝飾; 點綴"
+            },
+            {
+                "japanese":"喚く v. わめく",
+                "chinese":"叫喊, 尖叫"
             }
         ]
     },

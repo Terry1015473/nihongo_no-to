@@ -39,7 +39,7 @@ function showLyrics(song){
 
     song.lyrics.forEach(entry => {
         const div = document.createElement('div');
-        div.className = 'lyrics-entry';
+        div.className = 'lyric-entry';
 
         const jp = document.createElement('div');
         jp.className = 'japanese';
@@ -88,7 +88,7 @@ function playAudio(audioSrc){
         player.style.display = 'block';
         player.volume = 0.05;
         player.controlsList = "nodownload"
-        player.play();
+        // player.play();
 
         player.onended = function(){
             player.currentTime = 0;
@@ -109,3 +109,23 @@ document.getElementById('song-select').addEventListener('change', (e) =>{
     showLyrics(song);
     playAudio(song.audio);
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    if (typeof Sakura !== 'undefined') {
+        new Sakura('body', {
+            className: 'sakura',
+            fallSpeed: 1.5
+        });
+    } else {
+        console.error('Sakura.js 沒有正確載入');
+    }
+});
+
+var animation = lottie.loadAnimation({
+    container: document.getElementById('cat-animation'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'animation/Animation-1745651195566.json' 
+  });
+  

@@ -1,37 +1,62 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+:root{
+    --primary-color: #7B68EE;
+    --secondary-color: #f0f4ff;
+    --text-color: #333;
+    --accent-color: #FFA07A;
+    --bg-color: #fff;
+    --font-family: 'Note Sans TC', sans-serif
+}
+
 body{
-    font-family: sans-serif;
+    font-family: var(--font-family);
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
     margin:20px;
-    background-color: #e3cae7;
-    color: #040000;
     line-height: 1.6;
 }
+
 h1{
+    color: var(--text-color);
+    font-weight:bold;
+    text-align:center;
+    vertical-align:text-top;
+    margin-bottom: 2px;
+    font-size: 48px;
+}
+
+h1_title{
+    color: var(--text-color);
+    font-weight:bold;
     text-align:left;
     vertical-align:text-top;
     margin-bottom: 2px;
     font-size: 48px;
 }
-h4{
-    text-align: center;
-    font-size:18px;
 
-}
-
-#search-bar{
+#search-bar, #song-select{
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
     display: block;
     margin: 0 auto 30px auto;
     width: 60%;
     padding: 10px;
     font-size: 16px;
+    position:relative;
 }
 
 .lyric-entry{
-    margin-bottom: 20px;
+    background-color: var(--bg-color);
+    border-radius: 12px;
     padding: 10px;
-    border-left: 4px solid #007acc;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: background-color 0.2s;
+    margin-bottom: 20px;   
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
 .note-entry{
@@ -39,19 +64,22 @@ h4{
     padding: 10px;
     border-right: 4px solid #007acc;
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0, 0.05);
-    transition: background-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.lyrics-entry:hover{
-    background-color: #f0f8ff;
+.lyric-entry:hover, .note-entry:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .japanese{
     font-weight: bold;
     color: #007acc;
     white-space: pre-wrap;
-    font-size: 24px;
+    font-size: 36px;
+    text-align: left;
+    padding-left: 2em;
 }
 
 .chinese{
@@ -59,7 +87,9 @@ h4{
     margin-top: 5px;
     color: #444;
     white-space: pre-wrap;
-    font-size: 24px;
+    font-size: 28px;
+    text-align: left;
+    padding-left: 3em;
 }
 
 .japanese_note{
@@ -97,7 +127,10 @@ h4{
     margin-top: 20px;
 }
 
-#lyrics-container, #notes-container{
+#lyrics-container{
+    flex: 2;
+}
+#notes-container{
     flex: 1;
 }
 
@@ -111,4 +144,78 @@ h4{
     top: 20px;
     right: 20px;  
     vertical-align: top;
+}
+
+#about-section{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fefefeaa;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    text-align: center;
+}
+
+.sakura {
+    position: fixed !important;
+    top: -50px;
+    z-index: 0;
+    opacity: 0.6;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('https://raw.githubusercontent.com/tsukasa007/sakura.js/master/sakura.png'); 
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+main, h1, .lyric-entry, .note-entry{
+    position:relative;
+    z-index: 1;
+}
+
+@keyframes moveCat {
+    0% { 
+        left: 0; 
+        transform: scaleX(1);
+    }
+    49% { 
+        left:100%;
+        transform: scaleX(1);
+    }
+    50%{
+        left: 100%;
+        transform: scaleX(-1)
+    }
+    100%{ 
+        left: 0;
+        transform: scaleX(-1); 
+    }
+} 
+
+
+.container {
+    position: relative;
+    padding-top: 65px; /* 貓咪動畫的高度 */
+}
+  
+#cat-animation {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveCat 10s linear infinite;
 }
