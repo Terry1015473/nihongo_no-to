@@ -186,7 +186,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (typeof Sakura !== 'undefined') {
         new Sakura('body', {
             className: 'sakura',
-            fallSpeed: 1.5
+            fallSpeed: 0.5,
         });
     } else {
         console.error('Sakura.js 沒有正確載入');
