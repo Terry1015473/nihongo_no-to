@@ -1,5 +1,7 @@
 let songSelect;
 let allSongs = [];
+let homepageBGMPlayed = false;
+let photos = [];
 
 fetch('data/index.json')
     .then(response => response.json())
@@ -13,6 +15,16 @@ fetch('data/index.json')
         populateDropdown(allSongs);
     })
     .catch(error => console.error('載入資料錯誤:',error));
+
+fetch('photos/index.json')
+    .then(response => response.json())
+    .then(imageList => {
+        photos = imageList.map(imageName => `photos/${imageName}`);
+        console.log('載入相片:',photos);
+        createPhotoGallery()
+    })
+    .catch(error => console.error('載入圖片錯誤:',error));
+
 
 function populateDropdown(songs){
     const select = document.getElementById('song-select');
@@ -95,25 +107,31 @@ function showNote(song){
     });
 }
 
-function playAudio(audioSrc){
+function playAudio(audioSrc, autoplay = true){
     const player = document.getElementById('audio-player');
     if (audioSrc){
         player.src = audioSrc;
         player.style.display = 'block';
         player.volume = 0.05;
-        player.controlsList = "nodownload"
-        // player.play();
+        player.controlsList = "nodownload";
+
+        if (autoplay) {
+            player.play().catch(err => {
+                console.warn('播放失敗（可能是瀏覽器攔截）：', err);
+            });
+        }
 
         player.onended = function(){
             player.currentTime = 0;
             player.play();
         }
-    }else {
-        player.style.display = 'None';
+    } else {
+        player.style.display = 'none';
         player.pause();
         player.onended = null;
     }
 }
+
 function showNotes(song){
     const container = document.getElementById('lyrics-container');
     container.innerHTML = '';
@@ -166,23 +184,77 @@ function showGrammer(song){
     });
 }
 
-document.getElementById('song-select').addEventListener('change', (e) =>{
+function startBGM() {
+    if (!homepageBGMPlayed) {
+        const player = document.getElementById('audio-player');
+        player.play().catch(err => {
+            console.warn('播放失敗：', err);
+        });
+        homepageBGMPlayed = true;
+    }
+}
+
+function createPhotoGallery(){
+    const gallery = document.getElementById('photo-gallery');
+    gallery.innerHTML = '';
+    
+    
+    const row = document.createElement('div');
+    row.className = 'photo-row';
+    
+    
+    photos.forEach(photo => {
+        const img = document.createElement('img');
+        img.src = photo;
+        img.alt = '相片';
+        row.appendChild(img);
+    });
+    
+    photos.forEach(photo => {
+        const img = document.createElement('img');
+        img.src = photo;
+        img.alt = '相片';
+        row.appendChild(img);
+    });
+    
+    gallery.appendChild(row);
+}
+
+document.getElementById('song-select').addEventListener('change', (e) => {
     const index = e.target.value;
-    if (index === "") return;
+    if (index === "") {
+        playAudio("audio/lemonBGM.mp3", true);
+        return;
+    }
 
     const song = allSongs[index];
+
+    document.getElementById('content-container').style.display = 'flex';
+
     if (song.type == "song"){
+        document.getElementById('homepage').style.display = 'none';        
         showLyrics(song);
-        playAudio(song.audio);
+        playAudio(song.audio, false);
     }
     else if (song.type == "note"){
+        document.getElementById('homepage').style.display = 'none';
         showNotes(song);
-        playAudio(song.audio);
+        playAudio(song.audio, false);
     }
-    
+});
+document.getElementById('back-to-homepage').addEventListener('click', () =>{
+    document.getElementById('homepage').style.display = 'block';
+    document.getElementById('content-container').style.display = 'none';
+    playAudio("audio/lemonBGM.mp3", true);
 });
 
+
 window.addEventListener('DOMContentLoaded', () => {
+    playAudio("audio/lemonBGM.mp3", false); 
+    // document.body.addEventListener('click', startBGM, { once: true });
+    // document.body.addEventListener('mousemove', startBGM, { once: true });
+    document.body.addEventListener('wheel', startBGM, { once: true });
+
     if (typeof Sakura !== 'undefined') {
         new Sakura('body', {
             className: 'sakura',
@@ -191,13 +263,15 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('Sakura.js 沒有正確載入');
     }
-});
-
-var animation = lottie.loadAnimation({
+    var animation = lottie.loadAnimation({
     container: document.getElementById('cat-animation'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
     path: 'animation/Animation-1745651195566.json' 
   });
+});
+// window.addEventListener('DOMContentLoaded', createPhotoGallery);
+
+
   

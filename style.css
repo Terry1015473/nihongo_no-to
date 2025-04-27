@@ -219,3 +219,29 @@ main, h1, .lyric-entry, .note-entry{
     left: 0;
     animation: moveCat 10s linear infinite;
 }
+
+#photo-gallery{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.photo-row{
+    display: flex;
+    gap: 20px;
+    animation: scrollRow 100s linear infinite;
+    width: max-content;
+}
+
+.photo-row img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes scrollRow{
+    0% {transform: translateX(0%);}
+    100%{transform: translateX(-50%);}
+}

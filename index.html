@@ -23,24 +23,28 @@
 <body>
     <h1_title>日本語勉強ノート</h1_title>
     <img src="cover.jpg" id="homepage-img" alt="首頁圖片">
-
     <div class="container">
         <div id="cat-animation"></div>
         <select id="song-select" placeholder="請搜尋歌曲...">
-          <option value="">ノートを選択してください</option>
+        <option value="">ノートを選択してください</option>
         </select>
+    </div>
+    <div id="homepage" style="display: block">
+        <div id="photo-gallery"></div>
     </div>
     
     <div id="content-container">
         <div id="lyrics-container"></div>
         <div id="notes-container"></div>
+        <button id="back-to-homepage">ホームページ戻り</button>
     </div>
-    
-    <audio id="audio-player" controls style="display: none;" controlsList = "none"></audio>
     <footer id="about-section">
         <h3>このサイトの成り立ち</h3>
         <p>日本の生活に憧れを持てるのせいで日本語の勉強が始まります，ここですべての学習を記入しています！</p>
     </footer>
+    
+    <audio id="audio-player" controls style="display: none;" controlsList = "none"></audio>
+    
 
     <script src="script.js" defer></script>
 </body>
