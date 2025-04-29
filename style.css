@@ -83,7 +83,8 @@ h1_title{
 }
 
 .chinese{
-    font-style: italic;
+    /* font-style: italic; */
+    font-weight: bold;
     margin-top: 5px;
     color: #444;
     white-space: pre-wrap;
@@ -96,11 +97,12 @@ h1_title{
     font-weight:bold;
     color: #007acc;
     white-space: pre-wrap;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .chinese_note{
-    font-style: italic;
+    /* font-style: italic; */
+    font-weight:bold;
     margin-top: 5px;
     color: #444;
     white-space: pre-wrap;

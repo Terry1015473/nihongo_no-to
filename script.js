@@ -20,7 +20,7 @@ fetch('photos/index.json')
     .then(response => response.json())
     .then(imageList => {
         photos = imageList.map(imageName => `photos/${imageName}`);
-        console.log('載入相片:',photos);
+        // console.log('載入相片:',photos);
         createPhotoGallery()
     })
     .catch(error => console.error('載入圖片錯誤:',error));
