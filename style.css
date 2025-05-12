@@ -309,8 +309,22 @@ body.dark-mode{
         box-sizing: border-box;
     }
 
-    img, select, botton{
+    img, select, button{
         max-width:100%;
         width: auto;
+    }
+
+    #content-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .japanese,
+    .chinese,
+    .japanese_note,
+    .chinese_note{
+        font-size:1rem;
+        padding-left: 1em;
+        text-align: lest;
     }
 }
