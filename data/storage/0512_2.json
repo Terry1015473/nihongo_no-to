@@ -1,0 +1,86 @@
+{
+    "type":"note",
+    "title": "単語の人と人との関係-家人01",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "lyrics": [
+        {
+            "japanese":"一家 いっか 名詞",
+            "chinese":"一家子, 全家"
+        },
+        {
+            "japanese":"ありがたい イ形容詞",
+            "chinese":"值得感謝, 難得"
+        },
+        {
+            "japanese":" 向き合う むきあう 動詞",
+            "chinese":"面對, 面對面"
+        },
+        {
+            "japanese":"つくづく「と」 副詞",
+            "chinese":"深切地, 深刻地"
+        },
+        {
+            "japanese":"養う やしなう 他動詞",
+            "chinese":"養育, 培育"
+        },
+        {
+            "japanese":"役目 やくめ 名詞",
+            "chinese":"職責, 任務"
+        },
+        {
+            "japanese":"甘える あまえる 動詞",
+            "chinese":"撒嬌"
+        },
+        {
+            "japanese":"世間知らず せけんしらず 名詞",
+            "chinese":"沒見過世面, 閱歷淺"
+        },
+        {
+            "japanese":"しつけ 名詞",
+            "chinese":"教養, 管教"
+        },
+        {
+            "japanese":"言いつける いいつける 他動詞",
+            "chinese":"告狀, 吩咐"
+        },
+        {
+            "japanese":"自立「する」 じりつ 名詞",
+            "chinese":"自立, 獨立"
+        },
+        {
+            "japanese":"言い出す いいだす 動詞",
+            "chinese":"提出, 說出口"
+        },
+        {
+            "japanese":"意思 いし 名詞",
+            "chinese":"想法, 心意"
+        },
+        {
+            "japanese":"尊重「する」 そんちょう 名詞",
+            "chinese":"尊重"
+        },
+        {
+            "japanese":"説得「する」 せっとく 動詞",
+            "chinese":"說服"
+        }
+    ],
+    "notes":[
+        {
+            "japanese":"一家団らん いっかだんらん 名詞",
+            "chinese":"全家團圓"
+        },
+        {
+            "japanese":"しみじみ「と」 副詞",
+            "chinese":"深切地"
+        },
+        {
+            "japanese":"甘やかす あまやかす 動詞",
+            "chinese":"寵愛"
+        },
+        {
+            "japanese":"しつける 動詞",
+            "chinese":"管教, 教養..."
+        }
+    ]
+}
