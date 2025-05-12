@@ -81,13 +81,13 @@ body.entry-hovering .note-entry:not(:hover) {
 
 .lyric-entry:hover{
   opacity: 1;
-  transform: scale(1.05) translateY(-4px) translateX(100px);
+  transform: scale(1.1) translateY(-4px) translateX(100px);
   z-index: 10;
   position: relative;
 }
 .note-entry:hover {
   opacity: 1;
-  transform: scale(1.05) translateY(-4px) translateX(-100px);
+  transform: scale(1.1) translateY(-4px) translateX(-100px);
   z-index: 10;
   position: relative;
 }
@@ -399,5 +399,18 @@ body.dark-mode{
     width: 100%;
     margin: 10px auto;  
     display: block;
+    }
+
+    .lyric-entry:hover{
+    opacity: 1;
+    transform: scale(1.1) translateY(-4px) translateX(10px);
+    z-index: 10;
+    position: relative;
+    }
+    .note-entry:hover {
+    opacity: 1;
+    transform: scale(1.1) translateY(-4px) translateX(10px);
+    z-index: 10;
+    position: relative;
     }
 }
