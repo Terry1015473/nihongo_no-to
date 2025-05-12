@@ -249,6 +249,48 @@ main, h1, .lyric-entry, .note-entry{
     100%{transform: translateX(-50%);}
 }
 
+#toggle-dark-mode {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #74706f;
+    transform: scale(1.05);
+}
+
+#back-to-homepage {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#back-to-homepage:hover {
+    background-color: #74706f;
+    transform: scale(1.05);
+}
+
 body.dark-mode{
     background: linear-gradient(#1c1c1c, #2a2a2a);
     color: #f1f1f1;
