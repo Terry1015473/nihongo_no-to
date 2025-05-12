@@ -7,7 +7,7 @@ fetch('data/index.json')
     .then(response => response.json())
     .then(fileList => {
         return Promise.all(
-            fileList.map(file => fetch('data/' + file).then(res => res.json()))
+            fileList.map(file => fetch('data/storage/' + file).then(res => res.json()))
         );
     })
     .then(datas => {

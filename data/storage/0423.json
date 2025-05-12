@@ -1,0 +1,94 @@
+{
+    "type":"note",
+    "title": "0423ハイキュー!!ゴミ捨て場の決戦",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "lyrics": [
+        {
+            "japanese":"拳 こぶし 名詞",
+            "chinese":"拳頭"
+        },
+        {
+            "japanese":"突く つく/つつく 動詞",
+            "chinese":"冒著, 頂著 / 刺, 戳"
+        },
+        {
+            "japanese":"乗り気 のりき 名詞",
+            "chinese":"起勁, 感興趣"
+        },
+        {
+            "japanese":"なさそう 形容詞",
+            "chinese":"似乎沒有"
+        },
+        {
+            "japanese":"掴む つかむ 動詞",
+            "chinese":"抓, 抓住"
+        },
+        {
+            "japanese":"勝手知ったる 動詞",
+            "chinese":"非常了解, 再熟悉不過"
+        },
+        {
+            "japanese":"引っ張る ひっぱる 動詞",
+            "chinese":"拉, 拽, 扯, 拖"
+        },
+        {
+            "japanese":"血液 けつえき 名詞",
+            "chinese":"血液"
+        },
+        {
+            "japanese":"滞る とどこおる 動詞",
+            "chinese":"堵塞; 拖延; 耽擱"
+        },
+        {
+            "japanese":"正常 せいじょう 形容詞",
+            "chinese":"正常"
+        },
+        {
+            "japanese":"頭脳 ずのう 名詞",
+            "chinese":"頭腦"
+        },
+        {
+            "japanese":"常に つねに 副詞",
+            "chinese":"時常; 不斷; 總是"
+        },
+        {
+            "japanese":"徹底的 てっていてき 形容詞",
+            "chinese":"徹底的"
+        },
+        {
+            "japanese":"手足 てあし 名詞",
+            "chinese":"手腳"
+        },
+        {
+            "japanese":"気合い きあい 名詞",
+            "chinese":"氣勢, 吶喊"
+        },
+        {
+            "japanese":"鬨 とき 名詞",
+            "chinese":"(古代)吶喊"
+        },
+        {
+            "japanese":"散らす ちらす 動詞",
+            "chinese":"散(開), 弄散"
+        },
+        {
+            "japanese":"プライド名詞",
+            "chinese":"自尊心"
+        },
+        {
+            "japanese":"背負う せおう 動詞",
+            "chinese":"背; 背負; 擔當"
+        },
+        {
+            "japanese":"戦う たたかう動詞",
+            "chinese":"戰爭, 戰鬥"
+        }
+    ],
+    "notes":[
+        {
+            "japanese":"N + じみる",
+            "chinese":"N的樣子\nそういう様子、状態に見える。感じられるという意味を表します\n田舎じみる、子供じみるなど"
+        }
+    ]
+}
