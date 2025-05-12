@@ -288,17 +288,6 @@ body.dark-mode{
 }
 
 
-.container, #lyrics-container, #notes-container{
-    max-width:100%;
-    padding: 1rem;
-    box-sizing: borfer-box;
-}
-
-img,select, botton{
-    max-width: 100%;
-    width: auto;
-}
-
 @media screen and (max-width: 768px) {
     h1_title{
         font-size: 1.5rem;
@@ -317,5 +306,14 @@ img,select, botton{
         width: 100%;
         padding: 0.8em;
         font-size: 1rem;
+    }
+
+    .container, #lyrics-container, #notes-container{
+        box-sizing: border-box;
+    }
+
+    img, select, botton{
+        max-width:100%;
+        width: auto;
     }
 }
