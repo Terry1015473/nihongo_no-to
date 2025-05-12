@@ -265,15 +265,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('mouseout', (e) => {
         if (e.target.matches(entriesSelector)) {
             
-            setTimeout(() => {
-                const hovered = [...entries()].some(el => el.matches(':hover'));
-                if (!hovered) {
-                    document.body.classList.remove('entry-hovering');
-                }
-            }, 50);
+            
+            const hovered = [...entries()].some(el => el.matches(':hover'));
+            if (!hovered) {
+                document.body.classList.remove('entry-hovering');
+            }
+            
         }
     });
 });
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
     playAudio("audio/lemonBGM.mp3", false); 
     // document.body.addEventListener('click', startBGM, { once: true });
