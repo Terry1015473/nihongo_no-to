@@ -248,6 +248,10 @@ document.getElementById('back-to-homepage').addEventListener('click', () =>{
     playAudio("audio/lemonBGM.mp3", true);
 });
 
+document.getElementById('toggle-dark-mode').addEventListener('click', ()=>{
+    document.body.classList.toggle('dark-mode');
+})
+
 
 window.addEventListener('DOMContentLoaded', () => {
     playAudio("audio/lemonBGM.mp3", false); 

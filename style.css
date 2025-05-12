@@ -247,3 +247,75 @@ main, h1, .lyric-entry, .note-entry{
     0% {transform: translateX(0%);}
     100%{transform: translateX(-50%);}
 }
+
+body.dark-mode{
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode button,
+.dark-moder select,
+.dark-mode #song-select{
+    background-color: #333;
+    color: #f1f1f1;
+    border-color: #555;
+}
+
+.dark-mode img {
+    filter: brightness(0.8);
+}
+
+.dark-mode .lyric-entry{
+    background-color: #333;
+    color: #f1f1f1;
+    border-color: #555;
+}
+
+.dark-mode .note-entry{
+    background-color: #333;
+    color: #f1f1f1;
+    border-color: #555;
+}
+
+.dark-mode .chinese,
+.dark-mode .chinese_note{
+    color: #ddd4d4;
+}
+
+.dark-mode .japanese,
+.dark-mode .japanese_note{
+    color:#cab0f3;
+}
+
+
+.container, #lyrics-container, #notes-container{
+    max-width:100%;
+    padding: 1rem;
+    box-sizing: borfer-box;
+}
+
+img,select, botton{
+    max-width: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    h1_title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #song-select{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .lyric-entry, .note-entry{
+        font-size: 0.9rem;
+    }
+    
+    button{
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1rem;
+    }
+}
