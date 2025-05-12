@@ -61,6 +61,7 @@ h1_title{
 
 .note-entry{
     margin-bottom: 20px;
+    border-radius: 12px;
     padding: 10px;
     border-right: 4px solid #007acc;
     background-color: #fff;
@@ -79,7 +80,7 @@ h1_title{
     white-space: pre-wrap;
     font-size: 36px;
     text-align: left;
-    padding-left: 2em;
+    
 }
 
 .chinese{
@@ -90,7 +91,7 @@ h1_title{
     white-space: pre-wrap;
     font-size: 28px;
     text-align: left;
-    padding-left: 3em;
+    padding-left: 1em;
 }
 
 .japanese_note{
@@ -327,4 +328,11 @@ body.dark-mode{
         padding-left: 1em;
         text-align: lest;
     }
+
+    #audio-player{
+    position: static;  
+    width: 100%;
+    margin: 10px auto;  
+    display: block;
+}
 }
