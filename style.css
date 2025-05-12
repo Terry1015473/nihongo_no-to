@@ -376,5 +376,45 @@ body.dark-mode{
     width: 100%;
     margin: 10px auto;  
     display: block;
-}
+    }
+
+    #lyrics-container,
+    #notes-container{
+        overflow: visible;
+        position: relative
+    }
+
+    .lyric-entry{
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;   
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    position: relative;
+    z-index: 1;
+    }
+
+    .note-entry{
+        margin-bottom: 20px;
+        border-radius: 12px;
+        padding: 10px;
+        border-right: 4px solid #007acc;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3 ease;
+        position: relative;
+        z-index: 1;
+    }
+
+    .lyric-entry:hover {
+        transform:scale(1.1) translateY(-4px) translateX(200px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+    .note-entry:hover{
+        transform:scale(1.1) translateY(-4px) translateX(200px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
 }
