@@ -252,7 +252,28 @@ document.getElementById('toggle-dark-mode').addEventListener('click', ()=>{
     document.body.classList.toggle('dark-mode');
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const entriesSelector = '.lyric-entry, .note-entry';
+    const entries = () => document.querySelectorAll(entriesSelector);
 
+    document.body.addEventListener('mouseover', (e) => {
+        if (e.target.matches(entriesSelector)) {
+            document.body.classList.add('entry-hovering');
+        }
+    });
+
+    document.body.addEventListener('mouseout', (e) => {
+        if (e.target.matches(entriesSelector)) {
+            
+            setTimeout(() => {
+                const hovered = [...entries()].some(el => el.matches(':hover'));
+                if (!hovered) {
+                    document.body.classList.remove('entry-hovering');
+                }
+            }, 50);
+        }
+    });
+});
 window.addEventListener('DOMContentLoaded', () => {
     playAudio("audio/lemonBGM.mp3", false); 
     // document.body.addEventListener('click', startBGM, { once: true });

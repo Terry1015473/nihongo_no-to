@@ -69,10 +69,32 @@ h1_title{
     transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
 
-.lyric-entry:hover, .note-entry:hover{
+.lyric-entry, .note-entry {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+body.entry-hovering .lyric-entry:not(:hover),
+body.entry-hovering .note-entry:not(:hover) {
+  opacity: 0.4;
+}
+
+.lyric-entry:hover{
+  opacity: 1;
+  transform: scale(1.05) translateY(-4px) translateX(100px);
+  z-index: 10;
+  position: relative;
+}
+.note-entry:hover {
+  opacity: 1;
+  transform: scale(1.05) translateY(-4px) translateX(-100px);
+  z-index: 10;
+  position: relative;
+}
+/* .lyric-entry:hover, .note-entry:hover{
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .japanese{
     font-weight: bold;
@@ -129,6 +151,7 @@ h1_title{
     align-items: flex-start;
     margin-top: 20px;
 }
+
 
 #lyrics-container{
     flex: 2;
@@ -376,45 +399,5 @@ body.dark-mode{
     width: 100%;
     margin: 10px auto;  
     display: block;
-    }
-
-    #lyrics-container,
-    #notes-container{
-        overflow: visible;
-        position: relative
-    }
-
-    .lyric-entry{
-    background-color: var(--bg-color);
-    border-radius: 12px;
-    padding: 10px;
-    margin-bottom: 20px;   
-    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease, box-shadow 0.3 ease;
-    position: relative;
-    z-index: 1;
-    }
-
-    .note-entry{
-        margin-bottom: 20px;
-        border-radius: 12px;
-        padding: 10px;
-        border-right: 4px solid #007acc;
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease, box-shadow 0.3 ease;
-        position: relative;
-        z-index: 1;
-    }
-
-    .lyric-entry:hover {
-        transform:scale(1.1) translateY(-4px) translateX(200px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        z-index: 10;
-    }
-    .note-entry:hover{
-        transform:scale(1.1) translateY(-4px) translateX(200px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        z-index: 10;
     }
 }
