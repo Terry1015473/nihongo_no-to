@@ -220,6 +220,10 @@ function createPhotoGallery(){
     gallery.appendChild(row);
 }
 
+function goBack() {
+      window.location.href = "https://terry1015473.github.io/Personal-Site/"; // ← 請改成你的主網站網址
+    }
+
 document.getElementById('song-select').addEventListener('change', (e) => {
     const index = e.target.value;
     if (index === "") {
@@ -243,9 +247,11 @@ document.getElementById('song-select').addEventListener('change', (e) => {
     }
 });
 document.getElementById('back-to-homepage').addEventListener('click', () =>{
-    document.getElementById('homepage').style.display = 'block';
-    document.getElementById('content-container').style.display = 'none';
-    playAudio("audio/lemonBGM.mp3", true);
+    // document.getElementById('homepage').style.display = 'block';
+    // document.getElementById('content-container').style.display = 'none';
+    // playAudio("audio/lemonBGM.mp3", true);
+    goBack();
+    
 });
 
 document.getElementById('toggle-dark-mode').addEventListener('click', ()=>{
