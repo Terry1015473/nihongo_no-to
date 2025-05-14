@@ -1,0 +1,118 @@
+{
+    "type":"note",
+    "title": "単語の人と人との関係-家人02",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "lyrics": [
+        {
+            "japanese":"納得「する」 なっとく 名詞",
+            "chinese":"同意, 接受"
+        },
+        {
+            "japanese":"逆らう さからう 動詞",
+            "chinese":"1. 違逆 2. 逆向"
+        },
+        {
+            "japanese":"抵抗「する」 ていこう 名詞",
+            "chinese":"抵抗"
+        },
+        {
+            "japanese":"反省「する」 はんせい 名詞",
+            "chinese":"反省"
+        },
+        {
+            "japanese":"反省会 はんせいかい 名詞",
+            "chinese":"檢討會"
+        },
+        {
+            "japanese":"放っておく ほうっておく 動詞",
+            "chinese":"放著不管"
+        },
+        {
+            "japanese":"介護「する」 かいご 名詞",
+            "chinese":"照顧, 看護"
+        },
+        {
+            "japanese":"介護士 かいごし 名詞",
+            "chinese":"看護"
+        },
+        {
+            "japanese":"ホームヘルパー = ヘルパー 名詞",
+            "chinese":"居家看護"
+        },
+        {
+            "japanese":"世代 せだい 名詞",
+            "chinese":"世代"
+        },
+        {
+            "japanese":"ジェネレーション 名詞",
+            "chinese":"世代"
+        },
+        {
+            "japanese":"世代交代 せだいこうたい 名詞",
+            "chinese":"世代交替"
+        },
+        {
+            "japanese":"継ぐ つぐ 動詞",
+            "chinese":"繼承, 接替"
+        },
+        {
+            "japanese":"受け継ぐ うけつぐ 動詞",
+            "chinese":"繼承, 接替"
+        },
+        {
+            "japanese":"妊娠「する」 にんしん 名詞",
+            "chinese":"懷孕"
+        },
+        {
+            "japanese":"産婦人科 さんふじんか 名詞",
+            "chinese":"婦產科"
+        },
+        {
+            "japanese":"妊婦 にんぷ 名詞",
+            "chinese":"孕婦"
+        },
+        {
+            "japanese":"出産「する」 しゅっさん 名詞",
+            "chinese":"生產, 分娩"
+        },
+        {
+            "japanese":"出産祝い しゅっさんいわ 名詞",
+            "chinese":"新生兒賀禮"
+        },
+        {
+            "japanese":"産む うむ 動詞",
+            "chinese":"生產, 分娩"
+        },
+        {
+            "japanese":"生まれる うまれる 動詞",
+            "chinese":"出生"
+        }
+    ],
+    "notes":[
+        {
+            "japanese":"高学歴 こうがくれき 名詞",
+            "chinese":"高學歷"
+        },
+        {
+            "japanese":"高学年 こうがくねん 名詞",
+            "chinese":"高年級"
+        },
+        {
+            "japanese":"高収入 こうしゅうにゅう 名詞",
+            "chinese":"高收入"
+        },
+        {
+            "japanese":"高性能 こうせいのう 名詞",
+            "chinese":"高性能"
+        },
+        {
+            "japanese":"高気圧 こうきあつ 名詞",
+            "chinese":"高氣壓"
+        },
+        {
+            "japanese":"高血圧 こうけつあつ 名詞",
+            "chinese":"高血壓"
+        }
+    ]
+}
