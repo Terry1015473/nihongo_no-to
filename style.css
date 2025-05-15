@@ -33,7 +33,7 @@ h1{
 h1_title{
     color: var(--text-color);
     font-weight:bold;
-    text-align:left;
+    text-align:right;
     vertical-align:text-top;
     margin-bottom: 2px;
     font-size: 48px;
@@ -176,7 +176,7 @@ body.entry-hovering .note-entry:not(:hover) {
     margin-top: 50px;
     padding: 30px;
     background-color: #fefefeaa;
-    border-radius: 12px;
+    border-radius: 18px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     font-size: 16px;
     text-align: center;
@@ -273,9 +273,9 @@ main, h1, .lyric-entry, .note-entry{
 }
 
 #toggle-dark-mode {
-    position: absolute;
-    top: -20px;
-    right: 20px;
+    position: relative;
+    top: -110px;
+    right: -1275px;
     padding: 5px 10px;
     background-color: var(--text-color);
     color: white;
@@ -294,9 +294,9 @@ main, h1, .lyric-entry, .note-entry{
 }
 
 #back-to-homepage {
-    position: absolute;
-    top:20px;
-    right: 20px;
+    position: relative;
+    top:-70px;
+    right: -1125px;
     padding: 5px 10px;
     background-color: var(--text-color);
     color: white;
