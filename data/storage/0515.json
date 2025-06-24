@@ -1,9 +1,9 @@
 {
     "type":"note",
-    "title": "単語の人と人との関係-友達01",
+    "title": "0515単語の人と人との関係-友達01",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"友人 ゆうじん 名詞",
             "chinese":"朋友"
@@ -59,9 +59,7 @@
         {
             "japanese":"思いやり おもいやり 名詞",
             "chinese":"關懷, 體貼\n     Ex: 周りの人への思いやりを大切にしたい"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"仲良し なかよし 名詞",
             "chinese":"好朋友"

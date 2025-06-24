@@ -1,9 +1,9 @@
 {
     "type":"note",
-    "title": "知人．付き合い-01",
+    "title": "0526知人．付き合い-01",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"初対面 しょたいめん 名詞",
             "chinese":"初見面\n     Ex: 山田さんは初対面だったので、挨拶した"
@@ -63,9 +63,7 @@
         {
             "japanese":"てっきり 副詞",
             "chinese":"一定、準是\n     Ex: てっきり彼らを兄弟だと思っていた"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"合コン ごうこん 名詞",
             "chinese":"聯誼"

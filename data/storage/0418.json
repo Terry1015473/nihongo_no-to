@@ -3,7 +3,7 @@
     "title": "0418ハイキュー!!ゴミ捨て場の決戦",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"悔しがる くやしがる 動詞",
             "chinese":"悔恨, 遺憾"
@@ -51,9 +51,7 @@
         {
             "japanese":"睨む にらむ 動詞",
             "chinese":"注視, 盯視"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"多少なりとも たしょうなりとも 慣用",
             "chinese":"多少會"

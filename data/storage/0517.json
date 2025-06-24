@@ -1,9 +1,9 @@
 {
     "type":"note",
-    "title": "単語の人と人との関係-友達02",
+    "title": "0517単語の人と人との関係-友達02",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"何気ない なにげない イ形容詞",
             "chinese":"無意中, 若無其事, 自在的\n     Ex:   友達との何気ない会話が楽しい"
@@ -35,9 +35,7 @@
         {
             "japanese":"久しい ひさしい イ形容詞",
             "chinese":"很久\n     Ex: 高校時代のクラスメートと久しく会っていない"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"久しぶり ひさしぶり",
             "chinese":"相隔許久, 好久不見"

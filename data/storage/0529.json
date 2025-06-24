@@ -3,7 +3,7 @@
     "title": "0529知人．付き合い-02",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"思い込む おもいこむ 動詞",
             "chinese":"深信、沉思\n     Ex: 私は木村さんが独身だと思い込んでいた"
@@ -55,9 +55,7 @@
         {
             "japanese":"大いに おおいに 副詞",
             "chinese":"非常、大量\n     Ex: 今日は大いに飲んで楽しもう"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"低予算 ていよさん 名詞",
             "chinese":"低預算"

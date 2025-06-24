@@ -3,7 +3,7 @@
     "title": "0424ハイキュー!!ゴミ捨て場の決戦",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"支柱 しちゅう 名詞",
             "chinese":"支柱; 支架"
@@ -119,9 +119,7 @@
         {
             "japanese":"振り返る ふりかえる 動詞",
             "chinese":"回頭; 回顧"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"肩に力がいる",
             "chinese":"身體緊繃, 刻意的樣子"

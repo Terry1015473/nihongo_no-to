@@ -3,7 +3,7 @@
     "title": "0425ハイキュー!!ゴミ捨て場の決戦",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"同室 どうしつ 名詞",
             "chinese":"同房的(人)"
@@ -48,7 +48,5 @@
             "japanese":"冷静 れいせい 名詞",
             "chinese":"冷靜; 鎮靜"
         }
-    ],
-    "notes":[
     ]
 }

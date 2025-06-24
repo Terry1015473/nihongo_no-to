@@ -3,7 +3,7 @@
     "title": "0423ハイキュー!!ゴミ捨て場の決戦",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
-    "lyrics": [
+    "notes": [
         {
             "japanese":"拳 こぶし 名詞",
             "chinese":"拳頭"
@@ -83,9 +83,7 @@
         {
             "japanese":"戦う たたかう動詞",
             "chinese":"戰爭, 戰鬥"
-        }
-    ],
-    "notes":[
+        },
         {
             "japanese":"N + じみる",
             "chinese":"N的樣子\nそういう様子、状態に見える。感じられるという意味を表します\n田舎じみる、子供じみるなど"
