@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"content="width=device-width", initial-scale="1.0">
-    <title>日本語勉強ノート</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Tom Select CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
-
-    <!-- Tom Select JS -->
-    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
-
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-    <!-- Sakura JS-->
-    <script src="https://unpkg.com/sakura-js/dist/sakura.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本語ノート</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+  <script src="script.js" defer></script>
 
 </head>
 <body>
-    <!-- <h1_title>日本語勉強ノート</h1_title> -->
-    <img src="cover.jpg" id="homepage-img" alt="首頁圖片">
-    <div class="container">
-        <div id="cat-animation"></div>
-        <select id="song-select" placeholder="請搜尋歌曲...">
-        <option value="">ノートを選択してください</option>
-        </select>
-        
+  <header>
+    <div class="header-content">
+      <h1>日本語ノート</h1>
+      <button id="toggle-dark-mode">🌙</button>
     </div>
-    <div id="homepage" style="display: block">
-        <div id="photo-gallery"></div>
-    </div>
-    
-    <div id="content-container">
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="cover.jpg" alt="主頁圖片">
+      <p class="hero-text">日本語の世界へようこそ</p>
+      <p class="hero-subtitle">あなたの日本語学習の旅を始めましょう</p>
+    </section>
+
+    <section id="content" class="hidden">
+      <div class="note-content">
         <div id="lyrics-container"></div>
         <div id="notes-container"></div>
-    </div>
-    <footer id="about-section">
-        <div>
-        <button id="toggle-dark-mode">夜間模式</button>
-        <button id="back-to-homepage">ホームページ戻り</button>
-        </div>
-        <h3>このサイトの成り立ち</h3>
-        <p>日本の生活に憧れを持てるのせいで日本語の勉強が始まります，ここですべての学習を記入しています！</p>
-    </footer>
-    
-    <audio id="audio-player" controls style="display: none;" controlsList = "none"></audio>
-    
+      </div>
+      <button id="back-to-homepage" class="back-btn">⬅ ホームへ戻る</button>
+    </section>
 
-    <script src="script.js" defer></script>
+    <section id="homepage">
+      <div class="homepage-layout">
+        <div class="left-panel">
+          <h2>ノートを選択</h2>
+          <select id="song-select">
+            <option value="">ノートを選択してください</option>
+          </select>
+        </div>
+
+        <div class="right-panel">
+          <h2>最近のノート</h2>
+          <div id="recent-notes" class="note-cards"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>言語の勉強を記録するサイト。日本語が好きだから作りました！</p>
+  </footer>
+
+  <audio id="audio-player" controls style="display: none;" controlsList="nodownload"></audio>
 </body>
 </html>

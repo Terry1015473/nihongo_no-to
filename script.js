@@ -1,311 +1,157 @@
-let songSelect;
-let allSongs = [];
-let homepageBGMPlayed = false;
-let photos = [];
+    let songSelect;
+    let allSongs = [];
+    let homepageBGMPlayed = false;
+    let photos = [];
 
-fetch('data/index.json')
-    .then(response => response.json())
-    .then(fileList => {
-        return Promise.all(
-            fileList.map(file => fetch('data/storage/' + file).then(res => res.json()))
-        );
-    })
-    .then(datas => {
-        allSongs = datas;
-        populateDropdown(allSongs);
-    })
-    .catch(error => console.error('載入資料錯誤:',error));
+    fetch('data/index.json')
+      .then(res => res.json())
+      .then(fileList => Promise.all(
+        fileList.map(file => fetch('data/storage/' + file).then(res => res.json()))
+      ))
+      .then(data => {
+        allSongs = data;
+        populateDropdown(data);
+        renderRecentNotes(data);
+      });
 
-fetch('photos/index.json')
-    .then(response => response.json())
-    .then(imageList => {
-        photos = imageList.map(imageName => `photos/${imageName}`);
-        // console.log('載入相片:',photos);
-        createPhotoGallery()
-    })
-    .catch(error => console.error('載入圖片錯誤:',error));
+    fetch('photos/index.json')
+      .then(res => res.json())
+      .then(list => {
+        photos = list.map(name => `photos/${name}`);
+        renderPhotos();
+      });
 
-
-function populateDropdown(songs){
-    const select = document.getElementById('song-select');
-    select.innerHTML = '';
-
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.textContent = 'ノートを選択してください';
-    select.appendChild(defaultOption);
-
-    songs.forEach((song, index) => {
-        const option = document.createElement('option');
-        option.value = index;
-        option.textContent = `${song.title} - ${song.artist}`;
-        select.appendChild(option);
-    });
-
-    if (!songSelect) {
-        songSelect = new TomSelect('#song-select', {
-            maxOptions: 50,
-            placeholder: '請搜尋歌曲...',
-            allowEmptyOption: true
-        });
-    } else {
-        songSelect.clearOptions();
-        songSelect.addOptions([...select.options].map(opt => ({ value: opt.value, text: opt.textContent })));
-        songSelect.refreshOptions();
+    function populateDropdown(songs) {
+      const select = document.getElementById('song-select');
+      select.innerHTML = '<option value="">ノートを選択してください</option>';
+      songs.forEach((song, index) => {
+        const opt = document.createElement('option');
+        opt.value = index;
+        opt.textContent = song.title;
+        select.appendChild(opt);
+      });
+      songSelect = new TomSelect('#song-select', {
+        maxOptions: 100,
+        placeholder: '検索...',
+        allowEmptyOption: true
+      });
     }
-}  
 
-function showLyrics(song){
-    const container = document.getElementById('lyrics-container');
-    container.innerHTML = '';
+    function renderRecentNotes(songs) {
+      const container = document.getElementById('recent-notes');
+      if (!container) return;
 
-    const title = document.createElement('h1');
-    title.textContent = `${song.title} - ${song.artist}`;
-    container.appendChild(title);
+      container.innerHTML = '';
 
-    song.lyrics.forEach(entry => {
+      songs.slice(0, 4).forEach((song, index) => {
+        const div = document.createElement('div');
+        div.className = 'note-card';
+        div.innerHTML = `
+          <div class="title">${song.title}</div>
+          <div class="snippet">${song.type}</div>
+        `;
+        div.addEventListener('click', () => {
+          document.getElementById('song-select').value = index;
+          document.getElementById('homepage').style.display = 'none';
+          document.getElementById('content').classList.remove('hidden');
+
+          if (song.type === 'song') showLyrics(song);
+          else if (song.type === 'note') showNotes(song);
+
+          playAudio(song.audio, false);
+        });
+        container.appendChild(div);
+      });
+    }
+
+    function renderPhotos() {
+      const gallery = document.getElementById('photo-gallery');
+      if (!gallery) return;
+      gallery.innerHTML = '';
+      photos.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        gallery.appendChild(img);
+      });
+    }
+
+    function showLyrics(song) {
+      const container = document.getElementById('lyrics-container');
+      container.innerHTML = '<h2>歌詞</h2>';
+      song.lyrics.forEach(entry => {
         const div = document.createElement('div');
         div.className = 'lyric-entry';
-
-        const jp = document.createElement('div');
-        jp.className = 'japanese';
-        jp.textContent = entry.japanese;
-
-        const zh = document.createElement('div');
-        zh.className = 'chinese';
-        zh.textContent = entry.chinese;
-
-        div.appendChild(jp);
-        div.appendChild(zh);
+        div.innerHTML = `
+          <div class="japanese">${entry.japanese}</div>
+          <div class="chinese">${entry.chinese}</div>
+        `;
         container.appendChild(div);
-    });
-    showNote(song);
-}
-function showNote(song){
-    const container = document.getElementById('notes-container');
-    container.innerHTML = '';
+      });
+      showNotes(song);
+    }
 
-    const title = document.createElement('h1');
-    title.textContent = 'ノート';
-    container.appendChild(title);
-
-    song.notes.forEach(entry =>{
+    function showNotes(song) {
+      const container = document.getElementById('notes-container');
+      container.innerHTML = '<h2>ノート</h2>';
+      song.notes.forEach(entry => {
         const div = document.createElement('div');
         div.className = 'note-entry';
-
-        const jp = document.createElement('div');
-        jp.className = 'japanese_note';
-        jp.textContent = entry.japanese;
-
-        const zh = document.createElement('div');
-        zh.className = 'chinese_note';
-        zh.textContent = entry.chinese;
-
-        div.appendChild(jp);
-        div.appendChild(zh);
+        div.innerHTML = `
+          <div class="japanese_note">${entry.japanese}</div>
+          <div class="chinese_note">${entry.chinese}</div>
+          <div class="part-of-speech">${entry['part of speech'] || ''}</div>
+          <div class="example-sentence">${entry['example sentence'] || ''}</div>
+        `;
         container.appendChild(div);
-    });
-}
+      });
+    }
 
-function playAudio(audioSrc, autoplay = true){
-    const player = document.getElementById('audio-player');
-    if (audioSrc){
-        player.src = audioSrc;
-        player.style.display = 'block';
-        player.volume = 0.05;
-        player.controlsList = "nodownload";
-
-        if (autoplay) {
-            player.play().catch(err => {
-                console.warn('播放失敗（可能是瀏覽器攔截）：', err);
-            });
-        }
-
-        player.onended = function(){
-            player.currentTime = 0;
-            player.play();
-        }
-    } else {
-        player.style.display = 'none';
+    function playAudio(audioSrc, autoplay = true) {
+      const player = document.getElementById('audio-player');
+      if (!audioSrc) {
         player.pause();
-        player.onended = null;
-    }
-}
-
-function showNotes(song){
-    const container = document.getElementById('lyrics-container');
-    container.innerHTML = '';
-
-    const title = document.createElement('h1');
-    title.textContent = `${song.title} - 単語`;
-    container.appendChild(title);
-
-    song.lyrics.forEach(entry => {
-        const div = document.createElement('div');
-        div.className = 'lyric-entry';
-
-        const jp = document.createElement('div');
-        jp.className = 'japanese';
-        jp.textContent = entry.japanese;
-
-        const zh = document.createElement('div');
-        zh.className = 'chinese';
-        zh.textContent = entry.chinese;
-
-        div.appendChild(jp);
-        div.appendChild(zh);
-        container.appendChild(div);
-    });
-    showGrammer(song);
-}
-function showGrammer(song){
-    const container = document.getElementById('notes-container');
-    container.innerHTML = '';
-
-    const title = document.createElement('h1');
-    title.textContent = '文法など';
-    container.appendChild(title);
-
-    song.notes.forEach(entry =>{
-        const div = document.createElement('div');
-        div.className = 'note-entry';
-
-        const jp = document.createElement('div');
-        jp.className = 'japanese_note';
-        jp.textContent = entry.japanese;
-
-        const zh = document.createElement('div');
-        zh.className = 'chinese_note';
-        zh.textContent = entry.chinese;
-
-        div.appendChild(jp);
-        div.appendChild(zh);
-        container.appendChild(div);
-    });
-}
-
-function startBGM() {
-    if (!homepageBGMPlayed) {
-        const player = document.getElementById('audio-player');
-        player.play().catch(err => {
-            console.warn('播放失敗：', err);
-        });
-        homepageBGMPlayed = true;
-    }
-}
-
-function createPhotoGallery(){
-    const gallery = document.getElementById('photo-gallery');
-    gallery.innerHTML = '';
-    
-    
-    const row = document.createElement('div');
-    row.className = 'photo-row';
-    
-    
-    photos.forEach(photo => {
-        const img = document.createElement('img');
-        img.src = photo;
-        img.alt = '相片';
-        row.appendChild(img);
-    });
-    
-    photos.forEach(photo => {
-        const img = document.createElement('img');
-        img.src = photo;
-        img.alt = '相片';
-        row.appendChild(img);
-    });
-    
-    gallery.appendChild(row);
-}
-
-function goBack() {
-      window.location.href = "https://terry1015473.github.io/Personal-Site/"; // ← 請改成你的主網站網址
-    }
-
-document.getElementById('song-select').addEventListener('change', (e) => {
-    const index = e.target.value;
-    if (index === "") {
-        playAudio("audio/lemonBGM.mp3", true);
+        player.src = '';
         return;
+      }
+      player.src = audioSrc;
+      player.volume = 0.05;
+      player.controlsList = 'nodownload';
+      player.style.display = 'block';
+
+      if (autoplay) {
+        player.play().catch(err => console.warn('播放失敗:', err));
+      }
+
+      player.onended = () => {
+        player.currentTime = 0;
+        player.play();
+      };
     }
 
-    const song = allSongs[index];
+    document.getElementById('song-select').addEventListener('change', e => {
+      const index = e.target.value;
+      if (!index) return;
 
-    document.getElementById('content-container').style.display = 'flex';
+      const song = allSongs[index];
+      document.getElementById('homepage').style.display = 'none';
+      document.getElementById('content').classList.remove('hidden');
 
-    if (song.type == "song"){
-        document.getElementById('homepage').style.display = 'none';        
-        showLyrics(song);
-        playAudio(song.audio, false);
-    }
-    else if (song.type == "note"){
-        document.getElementById('homepage').style.display = 'none';
-        showNotes(song);
-        playAudio(song.audio, false);
-    }
-});
-document.getElementById('back-to-homepage').addEventListener('click', () =>{
-    // document.getElementById('homepage').style.display = 'block';
-    // document.getElementById('content-container').style.display = 'none';
-    // playAudio("audio/lemonBGM.mp3", true);
-    goBack();
-    
-});
+      if (song.type === 'song') showLyrics(song);
+      else if (song.type === 'note') showNotes(song);
 
-document.getElementById('toggle-dark-mode').addEventListener('click', ()=>{
-    document.body.classList.toggle('dark-mode');
-})
-
-document.addEventListener('DOMContentLoaded', () => {
-    const entriesSelector = '.lyric-entry, .note-entry';
-    const entries = () => document.querySelectorAll(entriesSelector);
-
-    document.body.addEventListener('mouseover', (e) => {
-        if (e.target.matches(entriesSelector)) {
-            document.body.classList.add('entry-hovering');
-        }
+      playAudio(song.audio, false);
     });
 
-    document.body.addEventListener('mouseout', (e) => {
-        if (e.target.matches(entriesSelector)) {
-            
-            
-            const hovered = [...entries()].some(el => el.matches(':hover'));
-            if (!hovered) {
-                document.body.classList.remove('entry-hovering');
-            }
-            
-        }
+    document.getElementById('back-to-homepage').addEventListener('click', () => {
+      document.getElementById('homepage').style.display = 'block';
+      document.getElementById('content').classList.add('hidden');
+      playAudio("audio/lemonBGM.mp3", false);
     });
-});
 
+    document.getElementById('toggle-dark-mode').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
 
-
-window.addEventListener('DOMContentLoaded', () => {
-    playAudio("audio/lemonBGM.mp3", false); 
-    // document.body.addEventListener('click', startBGM, { once: true });
-    // document.body.addEventListener('mousemove', startBGM, { once: true });
-    document.body.addEventListener('wheel', startBGM, { once: true });
-
-    if (typeof Sakura !== 'undefined') {
-        new Sakura('body', {
-            className: 'sakura',
-            fallSpeed: 0.5,
-        });
-    } else {
-        console.error('Sakura.js 沒有正確載入');
-    }
-    var animation = lottie.loadAnimation({
-    container: document.getElementById('cat-animation'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'animation/Animation-1745651195566.json' 
-  });
-});
-// window.addEventListener('DOMContentLoaded', createPhotoGallery);
-
-
-  
+    window.addEventListener('DOMContentLoaded', () => {
+      playAudio("audio/lemonBGM.mp3", false);
+    });
