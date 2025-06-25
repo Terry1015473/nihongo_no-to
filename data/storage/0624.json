@@ -6,65 +6,93 @@
     "notes": [
         {
             "japanese":"カップル",
-            "chinese":"情侶",
+            "chinese":"情侶、一對",
             "part of speech":"名詞",
-            "example sentence":""
+            "example sentence":"彼らは似合いのカップルだ"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"愛 あい",
+            "chinese":"愛",
+            "part of speech":"名詞",
+            "example sentence":"愛を込めて、彼女にメッセジーを送る"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"同士 どうし",
+            "chinese":"同伴, 性質一樣的人",
+            "part of speech":"名詞",
+            "example sentence":"恋人同士が見つめ合う"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"見つめる みつめる",
+            "chinese":"凝視",
+            "part of speech":"動詞",
+            "example sentence":"目をキラキラさせて見つめる"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"見つめ合う みつめあう",
+            "chinese":"互相凝視",
+            "part of speech":"動詞",
+            "example sentence":"愛は、お互いを見つめあうことではなく、ともに同じ方向を見つめることである"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"お互い おたがい",
+            "chinese":"彼此、互相",
+            "part of speech":"名詞、副詞",
+            "example sentence":"1. 二人はお互いの性格が気に入った\n2. 私達は会った時から、お互いに好きだった"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"気に入った きにいった",
+            "chinese":"某事物符合說話者的喜好/期望，或者使說話者感到滿足",
+            "part of speech":"動詞",
+            "example sentence":"気に入った家が見つかりました"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"釣り合う つりあう",
+            "chinese":"均衡、相配",
+            "part of speech":"動詞",
+            "example sentence":"僕が彼女と釣り合っているかどうか心配だ"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"むしろ",
+            "chinese":"寧可、還不如",
+            "part of speech":"副詞",
+            "example sentence":"完璧な人より、むしろ欠点のある人の方が好きだ"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"言わば いわば",
+            "chinese":"說起來、可以說",
+            "part of speech":"動詞",
+            "example sentence":"彼女は僕にとって、いわば太陽のような人だ"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"視線 しせん",
+            "chinese":"視線",
+            "part of speech":"名詞",
+            "example sentence":"二人は、しばらく視線を合わせなかった"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"そらす",
+            "chinese":"岔開、轉移",
+            "part of speech":"動詞",
+            "example sentence":"彼女に気づかれて、目をそらした"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"ちらっと",
+            "chinese":"稍微、一晃、一閃",
+            "part of speech":"副詞",
+            "example sentence":"好きな人が隣の席に座ったので、ちらっと見た"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"もしかすると",
+            "chinese":"或許、說不定",
+            "part of speech":"副詞",
+            "example sentence":"もしかすると、彼は私のことが好きかもしれない"
         },
         {
-            "japanese":"",
-            "chinese":""
+            "japanese":"探る さぐる",
+            "chinese":"1. 試探、暗中調查\n2. 用手或腳觸探",
+            "part of speech":"動詞",
+            "example sentence":"1. 友達に頼んで、彼女の気持ちを探ってもらった\n2. ポケットを探ったら、５００円玉が出てきた"
         }
     ]
 }
