@@ -1,0 +1,98 @@
+{
+    "type":"note",
+    "title": "0626恋人-02",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "notes": [
+        {
+            "japanese":"示す しめす",
+            "chinese":"1. 表露心意\n2. 舉例、出示",
+            "part of speech":"動詞",
+            "example sentence":"1. 彼は彼女に自分の気持ちを示せない\n 2. 例を示して、文法を説明する"
+        },
+        {
+            "japanese":"口実 こうじつ",
+            "chinese":"藉口",
+            "part of speech":"名詞",
+            "example sentence":"試験勉強を口実にして、彼女と図書館で会った"
+        },
+        {
+            "japanese":"うつむく",
+            "chinese":"低下頭",
+            "part of speech":"動詞",
+            "example sentence":"彼女は恥ずかしそうにうつむいた"
+        },
+        {
+            "japanese":"こそこそ「する」",
+            "chinese":"偷偷摸摸",
+            "part of speech":"副詞",
+            "example sentence":"親に内緒にして、こそこそ付き合うのは嫌だ"
+        },
+        {
+            "japanese":"内緒 ないしょ",
+            "chinese":"秘密、保密: 對特定對象保密且他人可能不知道秘密的存在(與秘密(ひみつ)不同)",
+            "part of speech":"名詞",
+            "example sentence":"両親に内緒で猫を飼っている"
+        },
+        {
+            "japanese":"囁く ささやく",
+            "chinese":"輕聲地說",
+            "part of speech":"動詞",
+            "example sentence":"彼は、優しい声で「愛してる」とささやいた"
+        },
+        {
+            "japanese":"禁物 きんもつ",
+            "chinese":"禁忌的事物",
+            "part of speech":"名詞",
+            "example sentence":"私たちの間で、噓は禁物"
+        },
+        {
+            "japanese":"許す ゆるす",
+            "chinese":"原諒",
+            "part of speech":"動詞",
+            "example sentence":"彼にうそをついたことを謝って、許してもらった"
+        },
+        {
+            "japanese":"合コン ごうこん",
+            "chinese":"聯誼",
+            "part of speech":"名詞",
+            "example sentence":"二人は合コンで知り合ったそうだ"
+        },
+        {
+            "japanese":"アプローチ",
+            "chinese":"接近",
+            "part of speech":"名詞",
+            "example sentence":"先にアプローチしたのは彼だった"
+        },
+        {
+            "japanese":"運命 うんめい",
+            "chinese":"命運",
+            "part of speech":"名詞",
+            "example sentence":"彼女こそ、僕の運命の人だ"
+        },
+        {
+            "japanese":"決意「する」 けつい",
+            "chinese":"決心",
+            "part of speech":"名詞",
+            "example sentence":"ついに彼女との結婚を決意した"
+        },
+        {
+            "japanese":"プロポーズ「する」",
+            "chinese":"求婚",
+            "part of speech":"名詞",
+            "example sentence":"指輪を贈って、彼女にプロポーズした"
+        },
+        {
+            "japanese":"誓う ちかう",
+            "chinese":"發誓",
+            "part of speech":"動詞",
+            "example sentence":"みんなの前で愛を誓った"
+        },
+        {
+            "japanese":"花嫁 はなよめ",
+            "chinese":"新娘",
+            "part of speech":"名詞",
+            "example sentence":"彼女の花嫁姿は、きっと美しだろう"
+        }
+    ]
+}
