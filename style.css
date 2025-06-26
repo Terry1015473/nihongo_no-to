@@ -441,7 +441,172 @@ body.dark-mode #audio-player {
     background: rgba(31, 41, 55, 0.9);
 }
 
+/* Dark mode adjustments for word card */
+body.dark-mode .word-card {
+    background: rgba(31, 41, 55, 0.9);
+    border-color: rgba(75, 85, 99, 0.3);
+}
+
+body.dark-mode .word-example {
+    background: rgba(75, 85, 99, 0.5);
+}
+
+body.dark-mode .word-timer {
+    background: rgba(31, 41, 55, 0.7);
+}
+
+/* === WORD CARD TICKER === */
+.word-ticker {
+    position: fixed;
+    top: 50%;
+    right: 5rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    z-index: 50;
+}
+
+.word-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-large);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.word-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+}
+
+.word-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-large);
+}
+
+.word-card.flipping {
+    transform: rotateY(180deg);
+}
+
+.word-card-content {
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.word-japanese {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.word-chinese {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.word-pos {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--secondary-color), #ec4899);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.word-source {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgb(8, 0, 0);
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.word-example {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.8rem;
+    border-radius: 10px;
+    line-height: 1.3;
+    margin-top: 0.5rem;
+}
+
+.word-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.word-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.word-btn.next {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+}
+
+.word-btn.toggle {
+    background: linear-gradient(135deg, var(--accent-color), #f97316);
+    color: white;
+}
+
+.word-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.word-timer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+}
+
 /* === RESPONSIVE === */
+@media (max-width: 1024px) {
+    .word-ticker {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    margin: 2rem 0;
+    }
+}
+
 @media (max-width: 768px) {
     .homepage-layout {
     grid-template-columns: 1fr;
@@ -470,5 +635,14 @@ body.dark-mode #audio-player {
 
     .note-cards {
     grid-template-columns: 1fr;
+    }
+
+    .word-ticker {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    margin: 2rem 0;
     }
 }
