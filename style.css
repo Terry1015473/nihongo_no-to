@@ -178,6 +178,9 @@ main {
 }
 
 .left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(20px);
     padding: 2.5rem;
@@ -185,6 +188,8 @@ main {
     box-shadow: var(--shadow-large);
     position: sticky;
     top: 120px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
 }
 
 .left-panel h2 {
@@ -193,6 +198,25 @@ main {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.song-select-panel {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: var(--shadow-large);
+    top: 120px;
+}
+
+.right-panel {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: var(--shadow-large);
+    position: sticky;
+    top: 120px;
 }
 
 .right-panel h2 {
@@ -457,11 +481,8 @@ body.dark-mode .word-timer {
 
 /* === WORD CARD TICKER === */
 .word-ticker {
-    position: fixed;
-    top: 50%;
-    right: 5rem;
-    transform: translateY(-50%);
-    width: 20rem;
+    position: sticky;
+    width: 100%;
     z-index: 50;
 }
 

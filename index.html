@@ -37,36 +37,36 @@
     <section id="homepage">
       <div class="homepage-layout">
         <div class="left-panel">
-          <h2>ノートを選択</h2>
-          <select id="song-select">
-            <option value="">ノートを選択してください</option>
-          </select>
+          <div class="song-select-panel">
+            <h2>ノートを選択</h2>
+            <select id="song-select">
+              <option value="">ノートを選択してください</option>
+            </select>  
+          </div>
+          <!-- Word Card Ticker -->
+          <div class="word-ticker" id="word-ticker">
+            <div class="word-card" id="word-card">
+              <div class="word-card-content" id="word-card-content">
+                <div class="word-japanese" id="word-japanese">単語カード</div>
+                <div class="word-chinese" id="word-chinese">Loading words...</div>
+                <div class="word-pos" id="word-pos" style="display: none;"></div>
+                <div class="word-example" id="word-example" style="display: none;"></div>
+                <div class="word-source" id="word-source" style="display: none;"></div>
+              </div>
+              <div class="word-controls">
+                <button class="word-btn next" id="next-word">次へ</button>
+                <button class="word-btn toggle" id="toggle-auto">自動: ON</button>
+              </div>
+              <div class="word-timer" id="word-timer">5s</div>
+            </div>
+          </div> 
         </div>
-
         <div class="right-panel">
           <h2>最近のノート</h2>
           <div id="recent-notes" class="note-cards"></div>
         </div>
       </div>
     </section>
-
-    <!-- Word Card Ticker -->
-    <div class="word-ticker" id="word-ticker">
-      <div class="word-card" id="word-card">
-        <div class="word-card-content" id="word-card-content">
-          <div class="word-japanese" id="word-japanese">単語カード</div>
-          <div class="word-chinese" id="word-chinese">Loading words...</div>
-          <div class="word-pos" id="word-pos" style="display: none;"></div>
-          <div class="word-example" id="word-example" style="display: none;"></div>
-          <div class="word-source" id="word-source" style="display: none;"></div>
-        </div>
-        <div class="word-controls">
-          <button class="word-btn next" id="next-word">次へ</button>
-          <button class="word-btn toggle" id="toggle-auto">自動: ON</button>
-        </div>
-        <div class="word-timer" id="word-timer">5s</div>
-      </div>
-    </div>   
 
   </main>
 
