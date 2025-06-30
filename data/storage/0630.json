@@ -1,0 +1,146 @@
+{
+    "type":"note",
+    "title": "0630恋人-これも覚えよう！",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "notes": [
+        {
+            "japanese":"好印象 こういんしょう",
+            "chinese":"印象好",
+            "part of speech":"名詞",
+            "example sentence":"笑顔が人に好印象を与える(あたえる)"
+        },
+        {
+            "japanese":"好条件 こうじょうけん",
+            "chinese":"條件好",
+            "part of speech":"名詞",
+            "example sentence":"その時は月虹(げっこう)が現れる(あらわれる)のに好条件だった"
+        },
+        {
+            "japanese":"好成績 こうせいせき",
+            "chinese":"成績好",
+            "part of speech":"名詞",
+            "example sentence":"彼はその高校の普通科に在籍し(ざいせき)、英語を中心に好成績を修めている"
+        },
+        {
+            "japanese":"修める おさめる",
+            "chinese":"1. 修養(身、心、零)\n 2. 學習(學問、技藝)\n3. 修理",
+            "part of speech":"動詞",
+            "example sentence":"1. 仏道(ぶつどう)を修める\n2. 技芸(ぎげい)を修める\n3. 道を修める"
+        },
+        {
+            "japanese":"好景気 こうけいき",
+            "chinese":"景氣好",
+            "part of speech":"名詞",
+            "example sentence":"彼は前回の好景気の間に財産を株取引(かぶとりひき)のあてた"
+        },
+        {
+            "japanese":"株取引 かぶとりひき",
+            "chinese":"股票交易",
+            "part of speech":"名詞",
+            "example sentence":"個人的(こじんてき)に株取引を行います"
+        },
+        {
+            "japanese":"好人物 こうじんぶつ",
+            "chinese":"好人",
+            "part of speech":"名詞",
+            "example sentence":"彼本人は好人物なんだが、その取り巻きがどうもいけないね"
+        },
+        {
+            "japanese":"取り巻き とりまき",
+            "chinese":"奉承者、諂媚者",
+            "part of speech":"名詞",
+            "example sentence":"彼は取り巻き連中に囲まれ(かこむ)、誰の忠告(ちゅうこく)も聞かなかった"
+        },
+        {
+            "japanese":"好都合 (こうつごう)",
+            "chinese":"順利、方便",
+            "part of speech":"名詞",
+            "example sentence":"今出発するのが好都合です"
+        },
+        {
+            "japanese":"悪条件 あくじょうけん",
+            "chinese":"條件差",
+            "part of speech":"名詞",
+            "example sentence":"私はもうこんな悪条件には我慢できない"
+        },
+        {
+            "japanese":"悪趣味 あくしゅみ",
+            "chinese":"不好的嗜好; 心平氣和地做影響他人之事",
+            "part of speech":"名詞",
+            "example sentence":"彼はひどく悪趣味なネクタイをしていた"
+        },
+        {
+            "japanese":"悪影響 あくえいきょう",
+            "chinese":"不好的影響",
+            "part of speech":"名詞",
+            "example sentence":"大気汚染(たいきおせん)がその地域(ちいき)に住む人全員に悪影響をもたらした"
+        },
+        {
+            "japanese":"齎す もたらす",
+            "chinese":"引起、帶來(某件事物引起另一件事的發生)",
+            "part of speech":"動詞",
+            "example sentence":"黒死病(ペスト)は西欧(せいおう)最大(さいだい)の疫病(えきびょう)被害(ひがい)を齎した"
+        },
+        {
+            "japanese":"悪天候 あくてんこう",
+            "chinese":"天候不佳",
+            "part of speech":"名詞",
+            "example sentence":"悪天候のため、今日の活動が一時停止(いちじていし)にされます"
+        },
+        {
+            "japanese":"悪習慣 あくしゅうかん",
+            "chinese":"壞習慣",
+            "part of speech":"名詞",
+            "example sentence":"彼女は喫煙(きつえん)の悪習慣がある"
+        },
+        {
+            "japanese":"悪循環 あくじゅんかん",
+            "chinese":"惡性循環",
+            "part of speech":"名詞",
+            "example sentence":"賃金(ちんぎん)と物価(ぶっか)の悪循環を断ち切る(たちきる)ことは困難(こんなん)だ"
+        },
+        {
+            "japanese":"断ち切る たちきる",
+            "chinese":"切斷、斷絕、了斷",
+            "part of speech":"動詞",
+            "example sentence":"習慣は一度見についてしまうと、断ち切るのがとても難しい"
+        },
+        {
+            "japanese":"悪知恵 わるぢえ",
+            "chinese":"壞主意、詭計",
+            "part of speech":"名詞",
+            "example sentence":"ありったけの悪知恵を出す"
+        },
+        {
+            "japanese":"ありったけ",
+            "chinese":"所有、一切、全部",
+            "part of speech":"副詞",
+            "example sentence":"我々はありったけの力を使って任務をやり遂げ(遂げる)なければならない"
+        },
+        {
+            "japanese":"遂げる とげる",
+            "chinese":"完成、實現、達成",
+            "part of speech":"動詞",
+            "example sentence":"目的を遂げる"
+        },
+        {
+            "japanese":"悪酔い わるよい",
+            "chinese":"酒後不適、發酒瘋",
+            "part of speech":"名詞",
+            "example sentence":"あなたはかつて悪酔いしたことありますか"
+        },
+        {
+            "japanese":"かつて",
+            "chinese":"曾幾何時",
+            "part of speech":"副詞",
+            "example sentence":"いまだかつて病気したことがない"
+        },
+        {
+            "japanese":"悪ふざけ",
+            "chinese":"過頭的惡作劇",
+            "part of speech":"名詞",
+            "example sentence":"私としては、いつも通りの悪ふざけでした"
+        }
+    ]
+}
