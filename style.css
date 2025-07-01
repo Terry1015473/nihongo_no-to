@@ -173,7 +173,7 @@ main {
 .homepage-layout {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 8rem;
+    gap: 4rem;
     align-items: start;
 }
 
@@ -647,7 +647,28 @@ body.dark-mode .word-timer {
     }
 
     #hero {
-    padding: 2rem 1rem;
+        padding: 2rem 1rem; /* Reduce padding on mobile */
+        margin-bottom: 2rem;
+        border-radius: 20px; /* Smaller border radius on mobile */
+    }
+    
+    #hero img {
+        max-height: 250px; /* Smaller max height on mobile */
+        margin-bottom: 1.5rem;
+        border-radius: 15px; /* Adjust border radius for mobile */
+    }
+
+    #hero img:hover {
+        transform: scale(1.01); /* Less dramatic scaling on mobile */
+    }
+
+    .hero-text {
+        font-size: 1.5rem; /* Smaller text on mobile */
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem; /* Smaller subtitle on mobile */
     }
 
     .note-content {

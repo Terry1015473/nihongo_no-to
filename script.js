@@ -63,6 +63,9 @@
           document.getElementById('homepage').style.display = 'none';
           document.getElementById('content').classList.remove('hidden');
 
+          document.getElementById('lyrics-container').innerHTML = '';
+          document.getElementById('notes-container').innerHTML = '';
+
           if (song.type === 'song') showLyrics(song);
           else if (song.type === 'note') showNotes(song);
 
@@ -280,6 +283,9 @@
       const song = allSongs[index];
       document.getElementById('homepage').style.display = 'none';
       document.getElementById('content').classList.remove('hidden');
+
+      document.getElementById('lyrics-container').innerHTML = '';
+      document.getElementById('notes-container').innerHTML = '';
 
       if (song.type === 'song') showLyrics(song);
       else if (song.type === 'note') showNotes(song);
