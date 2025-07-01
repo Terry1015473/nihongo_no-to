@@ -1,0 +1,92 @@
+{
+    "type":"note",
+    "title": "0701関係悪化-01",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "notes": [
+        {
+            "japanese":"些細な ささいな",
+            "chinese":"微不足道、瑣碎",
+            "part of speech":"な-形容詞",
+            "example sentence":"些細なことが原因で、彼女とけんかになった"
+        },
+        {
+            "japanese":"避ける さける",
+            "chinese":"避開、避免",
+            "part of speech":"動詞",
+            "example sentence":"私は彼のようなタイプが苦手で、つい避けてしまう"
+        },
+        {
+            "japanese":"つい",
+            "chinese":"1. 剛剛\n2. 不小心、不由自主的",
+            "part of speech":"副詞",
+            "example sentence":"毎回彼の顔を見ると、つい笑っちゃう"
+        },
+        {
+            "japanese":"誤解「する」 ごかい",
+            "chinese":"誤解",
+            "part of speech":"名詞",
+            "example sentence":"小さなことが彼女の誤解を招いてしまった"
+        },
+        {
+            "japanese":"勘違い「する」 かんちがい",
+            "chinese":"誤會、錯覺",
+            "part of speech":"名詞",
+            "example sentence":"私の勘違いで、親友とけんかになった"
+        },
+        {
+            "japanese":"言い訳「する」 いいわけ",
+            "chinese":"藉口、辯解",
+            "part of speech":"名詞",
+            "example sentence":"彼女は言い訳が多い人だ"
+        },
+        {
+            "japanese":"きっぱり「と」",
+            "chinese":"果斷、不猶豫",
+            "part of speech":"副詞",
+            "example sentence":"彼に食事に誘われたが、きっぱり断った"
+        },
+        {
+            "japanese":"ばかにする",
+            "chinese":"瞧不起人、愚弄人",
+            "part of speech":"慣用",
+            "example sentence":"あの人は、いつも私を馬鹿にしている"
+        },
+        {
+            "japanese":"嫌味「な」いやみ",
+            "chinese":"令人不快、刺耳",
+            "part of speech":"名詞、な-形容詞",
+            "example sentence":"彼の言い方が嫌味に聞こえる"
+        },
+        {
+            "japanese":"責める せめる",
+            "chinese":"責備",
+            "part of speech":"動詞",
+            "example sentence":"一方的に人を責めるのはよくない"
+        },
+        {
+            "japanese":"貶す けなす",
+            "chinese":"貶低、毀謗",
+            "part of speech":"動詞",
+            "example sentence":"彼は人を褒めず(ほめる)、いつもけなしている"
+        },
+        {
+            "japanese":"褒める ほめる",
+            "chinese":"讚美",
+            "part of speech":"動詞",
+            "example sentence":"父親は息子が学校の宿題を一生懸命頑張ていたのを褒めた\n褒める: 目上の人から目下の人に対してや、同等の相手に対して使います\n誉める: 社会的な評価というニュアンスで使うことが多い"
+        },
+        {
+            "japanese":"黙る だまる",
+            "chinese":"沉默",
+            "part of speech":"動詞",
+            "example sentence":"彼女が怒っているときは、黙るしかない"
+        },
+        {
+            "japanese":"睨む にらむ",
+            "chinese":"盯著、瞪著、怒視",
+            "part of speech":"動詞",
+            "example sentence":"彼女は怖い顔で、じっと彼をにらんだ"
+        }
+    ]
+}
