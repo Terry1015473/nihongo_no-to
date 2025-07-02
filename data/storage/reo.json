@@ -1,6 +1,6 @@
 {
     "type":"song",
-    "title": "0629 レオ",
+    "title": "0702 レオ",
     "artist": "ヨン",
     "audio": "audio/background.mp3",
     "lyrics": [
@@ -9,7 +9,7 @@
             "chinese":"在櫥窗中度過的那些日子裡"
         },
         {
-            "japanese":"誰もかれも過ぎ去っていた",
+            "japanese":"誰もかれもが過ぎ去っていた",
             "chinese":"大家都在我眼前經過並離去"
         },
         {
@@ -179,22 +179,76 @@
     ],
     "notes":[
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"過ごす すごす",
+            "chinese":"度過、生活",
+            "part of speech":"動詞",
+            "example sentence":"楽しいひと時を過ごす"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"ひと時 ひととき",
+            "chinese":"一段短暫的時間",
+            "part of speech":"名詞",
+            "example sentence":"おかげで楽しいひと時を過ごさせて頂きました"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"誰もかれも",
+            "chinese":"每個人都、不論誰都",
+            "part of speech":"名詞",
+            "example sentence":"誰もかれもがこんなことにあったら、困ったね"
+        },
+        {
+            "japanese":"転げる ころげる",
+            "chinese":"1. 滾\n2. 倒下\n3. 翻滾",
+            "part of speech":"動詞",
+            "example sentence":"1. ボールが転げる\n2. 彼は階段から転げ落ちた\n3. 子供たちが芝の上で転げまわっている"
+        },
+        {
+            "japanese":"くすぐる",
+            "chinese":"1. 搔癢\n2. 逗人發笑\n3. 挑逗",
+            "part of speech":"動詞",
+            "example sentence":"くすぐりとして使われる"
+        },
+        {
+            "japanese":"ほど",
+            "chinese":"1. 數量詞 + ほど 表概數(左右、大約)\n2. N/V + ほど 比喻某事物彷彿如那般程度(~得、~得令人)\n3. N/V+ほど~ない 表示以前項為準，後項未達前項基準(沒有~那麼~)",
+            "part of speech":"文法",
+            "example sentence":"1. 野菜を入れて約１０分ほど煮込む\n2. 死ぬほど疲れた\n3. 風は思っていたほど冷たくなかった"
+        },
+        {
+            "japanese":"利く/効く きく",
+            "chinese":"1. 有效、生效\n2. 靈敏",
+            "part of speech":"動詞",
+            "example sentence":"1. 薬が効く\n2. 鼻が利く\n3. 能、經得住  無理がきかない\n4. 表人心思細膩、善解人意 彼は気が利く"
+        },
+        {
+            "japanese":"辛い つらい",
+            "chinese":"表心裡難過、傷心",
+            "part of speech":"形容詞",
+            "example sentence":"辛い日にあった時に、楽しいことを考えましょう"
+        },
+        {
+            "japanese":"が(書面)/けど(口語)/けれど,けれども(鄭重)",
+            "chinese":"1. 逆接\n2. 作為前置詞時表單純接續",
+            "part of speech":"接續助詞",
+            "example sentence":"1. 両親は犬が嫌いだが、飼わせてくれた\n2. 留学したいけれど、お金がなくて行けない\n3. その話ですけど、私も聞きました"
+        },
+        {
+            "japanese":"撫でる なでる",
+            "chinese":"撫摸",
+            "part of speech":"動詞",
+            "example sentence":"すみませんが、犬ちゃんをちょっと撫でらせて頂けますか"
+        },
+        {
+            "japanese":"て + よかった",
+            "chinese":"~真是太好了",
+            "part of speech":"文法",
+            "example sentence":"1. 新之助君に会えてよかった\n2. 君が無事でよかった"
+        },
+        {
+            "japanese":"無事 ぶじ",
+            "chinese":"平安、順利、沒有意外",
+            "part of speech":"名詞",
+            "example sentence":"1. 無事に帰宅しました\n2. イベントは無事終了しました"
         }
     ]
 }
