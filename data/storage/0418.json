@@ -5,60 +5,88 @@
     "audio": "audio/background.mp3",
     "notes": [
         {
-            "japanese":"悔しがる くやしがる 動詞",
-            "chinese":"悔恨, 遺憾"
+            "japanese":"悔しがる くやしがる",
+            "chinese":"悔恨, 遺憾",
+            "part of speech": "他動詞",
+            "example sentence": "弟は試合に負けて悔しがって泣いていた" 
         },
         {
-            "japanese":"だが 逆接",
-            "chinese":"但是, 可是"
+            "japanese":"だが",
+            "chinese":"但是, 可是",
+            "part of speech": "逆接",
+            "example sentence": "彼は優しい人だが、時々怒りっぽくなる"
         },
         {
-            "japanese":"応える こたえる 動詞",
-            "chinese":"反應"
+            "japanese":"応える こたえる",
+            "chinese":"反應, 響應, 回報",
+            "part of speech":"自動詞",
+            "example sentence":"両親の恩にこたえたいと思います"
         },
         {
-            "japanese":"分断 ぶんだん 名詞",
-            "chinese":"分割, 切斷"
+            "japanese":"分断 ぶんだん",
+            "chinese":"分割, 切斷",
+            "part of speech":"名詞",
+            "example sentence":"新しい高速道路の建設(けんせつ)により、この地域(ちいき)は南北(なんぼく)に分断されてしまった"
         },
         {
-            "japanese":"多少 たしょう 名詞",
-            "chinese":"多少, 多寡"
+            "japanese":"多少 たしょう",
+            "chinese":"多少, 多寡",
+            "part of speech":"名詞",
+            "example sentence":"多少の失敗は成長の過程(かてい)で必要です"
         },
         {
-            "japanese":"じっと 副詞",
-            "chinese":"保持穩定, 一動不動"
+            "japanese":"じっと",
+            "chinese":"保持穩定, 一動不動",
+            "part of speech":"副詞",
+            "example sentence":"猫がじっと獲物(えもの)を狙っている(狙う)"
         },
         {
-            "japanese":"分析 ぶんせき 名詞",
-            "chinese":"分析"
+            "japanese":"分析 ぶんせき",
+            "chinese":"分析",
+            "part of speech":"名詞",
+            "example sentence":"データを分析して、市場の動向(どうこう)を把握しましょう(はあく)"
         },
         {
-            "japanese":"なにやら 副詞",
-            "chinese":"不知為何, 總有些"
+            "japanese":"なにやら",
+            "chinese":"不知為何, 總有些, 某種",
+            "part of speech":"副詞",
+            "example sentence":"隣の部屋から何やら物音を聞こえてきた"
         },
         {
-            "japanese":"移る うつる 動詞",
-            "chinese":"移動, 搬家"
+            "japanese":"移る うつる",
+            "chinese":"移動, 搬家",
+            "part of speech":"自動詞",
+            "example sentence":"来月から新しい部署(ぶしょ)に移ることになりました"
         },
         {
-            "japanese":"いつだって 慣用表現",
-            "chinese":"無論何時"
+            "japanese":"いつだって",
+            "chinese":"無論何時",
+            "part of speech":"慣用用法",
+            "example sentence":"いつだって連絡してくれていいからね"
         },
         {
-            "japanese":"見守る みまもる 動詞",
-            "chinese":"注視"
+            "japanese":"見守る みまもる",
+            "chinese":"注視, 看守, 守護, 關注",
+            "part of speech":"他動詞",
+            "example sentence":"先生は生徒(せいと)の成長を温かく見守っています"
         },
         {
-            "japanese":"睨む にらむ 動詞",
-            "chinese":"注視, 盯視"
+            "japanese":"睨む にらむ",
+            "chinese":"瞪、盯視、怒視／瞄準、看準",
+            "part of speech":"他動詞",
+            "example sentence":"慎重に(しんちょうに)ホールをにらんでショットを打った"
         },
         {
-            "japanese":"多少なりとも たしょうなりとも 慣用",
-            "chinese":"多少會"
+            "japanese":"多少なりとも たしょうなりとも",
+            "chinese":"多少, 或多或少",
+            "part of speech":"慣用用法",
+            "example sentence":"多少なりとも貯金(ちょきん)ができて、安心しました"
         },
         {
             "japanese":"さほど～ない",
-            "chinese":"沒有那麼地~"
+            "chinese":"沒有那麼地~",
+            "part of speech":"文法",
+            "example sentence":"今日の料理はさほど難しくなかったです"
         }
     ]
 }
