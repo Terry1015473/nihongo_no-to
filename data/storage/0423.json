@@ -5,88 +5,130 @@
     "audio": "audio/background.mp3",
     "notes": [
         {
-            "japanese":"拳 こぶし 名詞",
-            "chinese":"拳頭"
+            "japanese":"拳 こぶし",
+            "chinese":"拳頭",
+            "part of speech": "名詞",
+            "example sentence":"怒りのあまり、壁にこぶしを打ち付けた"
         },
         {
-            "japanese":"突く つく/つつく 動詞",
-            "chinese":"冒著, 頂著 / 刺, 戳"
+            "japanese":"突く つく/つつく",
+            "chinese":"冒著, 頂著 / 刺, 戳",
+            "part of speech":"他動詞",
+            "example sentence":"指で壁のボタンをついたら、エレベーターが来た"
         },
         {
             "japanese":"乗り気 のりき 名詞",
-            "chinese":"起勁, 感興趣"
+            "chinese":"起勁, 感興趣",
+            "part of speech":"名詞",
+            "example sentence":"新しいプロジェクトにみんな乗り気で、すぐに始められそうです"
         },
         {
-            "japanese":"なさそう 形容詞",
-            "chinese":"似乎沒有"
+            "japanese":"なさそう",
+            "chinese":"似乎沒有",
+            "part of speech":"な形容詞",
+            "example sentence":"彼は来る気なさそうだから、先に始めましょう"
         },
         {
-            "japanese":"掴む つかむ 動詞",
-            "chinese":"抓, 抓住"
+            "japanese":"掴む つかむ",
+            "chinese":"抓, 抓住",
+            "part of speech":"他動詞",
+            "example sentence":"バスの中で手すりをすっかりつかんでください"
         },
         {
-            "japanese":"勝手知ったる 動詞",
-            "chinese":"非常了解, 再熟悉不過"
+            "japanese":"勝手知ったる",
+            "chinese":"非常了解, 再熟悉不過",
+            "part of speech":"慣用",
+            "example sentence":"彼は長年この店で働いているから、店内のことは勝手知ったるよ"
         },
         {
-            "japanese":"引っ張る ひっぱる 動詞",
-            "chinese":"拉, 拽, 扯, 拖"
+            "japanese":"引っ張る ひっぱる",
+            "chinese":"拉、拖、拽、牽引／拖延、延長",
+            "part of speech":"他動詞",
+            "example sentence":"彼は会議の時間を引っ張って、みんなを待たせた"
         },
         {
-            "japanese":"血液 けつえき 名詞",
-            "chinese":"血液"
+            "japanese":"血液 けつえき",
+            "chinese":"血液",
+            "part of speech":"名詞",
+            "example sentence":"血液型(けつえきがた)は遺伝(いでん)によって決まります"
         },
         {
-            "japanese":"滞る とどこおる 動詞",
-            "chinese":"堵塞; 拖延; 耽擱"
+            "japanese":"滞る とどこおる",
+            "chinese":"堵塞; 拖延; 耽擱",
+            "part of speech":"自動詞",
+            "example sentence":"景気(けいき)の低迷(ていめい)で商売(しょうばい)が滞っている"
         },
         {
-            "japanese":"正常 せいじょう 形容詞",
-            "chinese":"正常"
+            "japanese":"正常 せいじょう",
+            "chinese":"正常",
+            "part of speech":"な形容詞、名詞",
+            "example sentence":"血圧(けつあつ)が正常値(せいじょううち)を超えています"
         },
         {
-            "japanese":"頭脳 ずのう 名詞",
-            "chinese":"頭腦"
+            "japanese":"頭脳 ずのう",
+            "chinese":"頭腦",
+            "part of speech":"名詞",
+            "example sentence":"優秀な(ゆうしゅう)頭脳を持つ人材(じんざい)を探しています"
         },
         {
-            "japanese":"常に つねに 副詞",
-            "chinese":"時常; 不斷; 總是"
+            "japanese":"常に つねに",
+            "chinese":"時常; 不斷; 總是",
+            "part of speech":"副詞",
+            "example sentence":"彼は常に笑顔で接客(せっきゃく)しています"
         },
         {
-            "japanese":"徹底的 てっていてき 形容詞",
-            "chinese":"徹底的"
+            "japanese":"徹底的 てっていてき",
+            "chinese":"徹底的",
+            "part of speech":"な形容詞",
+            "example sentence":"徹底的な準備のおかげで、プレゼンは大成功でした"
         },
         {
-            "japanese":"手足 てあし 名詞",
-            "chinese":"手腳"
+            "japanese":"手足 てあし",
+            "chinese":"手腳",
+            "part of speech":"名詞",
+            "example sentence":"緊張して手足が震え(ふるえる)ている"
         },
         {
-            "japanese":"気合い きあい 名詞",
-            "chinese":"氣勢, 吶喊"
+            "japanese":"気合い きあい",
+            "chinese":"氣勢, 鬥志; 吶喊",
+            "part of speech":"名詞",
+            "example sentence":"気合を入れて試験に臨もう(のぞむ)"
         },
         {
-            "japanese":"鬨 とき 名詞",
-            "chinese":"(古代)吶喊"
+            "japanese":"鬨 とき",
+            "chinese":"(古代)吶喊",
+            "part of speech":"名詞",
+            "example sentence":"応援団の鬨で会場が一気に盛り上がった"
         },
         {
-            "japanese":"散らす ちらす 動詞",
-            "chinese":"散(開), 弄散"
+            "japanese":"散らす ちらす",
+            "chinese":"散(開), 弄散",
+            "part of speech":"他動詞",
+            "example sentence":"警察は群衆(ぐんしゅう)を散らすように指示した"
         },
         {
-            "japanese":"プライド名詞",
-            "chinese":"自尊心"
+            "japanese":"プライド",
+            "chinese":"自豪感、驕傲、自尊心、自負",
+            "part of speech":"名詞",
+            "example sentence":"プライドを傷つけられて、涙が出そうになった"
         },
         {
-            "japanese":"背負う せおう 動詞",
-            "chinese":"背; 背負; 擔當"
+            "japanese":"背負う せおう",
+            "chinese":"背; 背負; 擔當",
+            "part of speech":"他動詞",
+            "example sentence":"家族の生活を背負うのは大変な責任だ"
         },
         {
-            "japanese":"戦う たたかう動詞",
-            "chinese":"戰爭, 戰鬥"
+            "japanese":"戦う たたかう",
+            "chinese":"戰爭, 戰鬥",
+            "part of speech":"自動詞",
+            "example sentence":"チームメイトとともに優勝(ゆうしょう)を目指して戦おう"
         },
         {
             "japanese":"N + じみる",
-            "chinese":"N的樣子\nそういう様子、状態に見える。感じられるという意味を表します\n田舎じみる、子供じみるなど"
+            "chinese":"N的樣子\nそういう様子、状態に見える。感じられるという意味を表します\n田舎じみる、子供じみるなど",
+            "part of speech":"文法",
+            "example sentence":"最近の若者は大人じみた服装をする"
         }
     ]
 }
