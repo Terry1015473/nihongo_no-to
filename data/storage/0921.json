@@ -1,0 +1,92 @@
+{
+    "type":"note",
+    "title": "0921-ビジネス日本語-01",
+    "artist": "ヨン",
+    "audio": "audio/background.mp3",
+    "notes": [
+        {
+            "japanese":"する",
+            "chinese":"なさる",
+            "part of speech":"敬語",
+            "example sentence":"1. 明日、会議になさいますか\n2. お忙しいところ、なさいます"
+        },
+        {
+            "japanese":"する",
+            "chinese":"いたす",
+            "part of speech":"謙譲語",
+            "example sentence":"1. ご案内いたします\n2. この件は私に致させます"
+        },
+        {
+            "japanese":"いたす",
+            "chinese":"貢獻、盡; 招致、導致",
+            "part of speech":"他動詞",
+            "example sentence":"今回の事故(じこ)は私の不注意が致したものです"
+        },
+        {
+            "japanese":"いる",
+            "chinese":"いらっしゃる, おいでになる",
+            "part of speech":"敬語",
+            "example sentence":"1. 先生は今職員室にいらっしゃいますか\n2. 社長は今日も本社においでになっています"
+        },
+        {
+            "japanese":"いる",
+            "chinese":"おる",
+            "part of speech":"謙譲語",
+            "example sentence":"申し訳ございませんが、課長はただいま席におりません"
+        },
+        {
+            "japanese":"来る",
+            "chinese":"いらっしゃる, おいでになる, お越しになる, お見えになる, ご足労(そくろう)になる",
+            "part of speech":"敬語",
+            "example sentence":"1. お客様がいらっしゃいます\n2. 明日のパーティはぜひおいでください\n3. 明日お客様がお越しになる予定ですので、会議室の準備をお願いします\n4. 本日は当店にお見えになっていただき、誠にありがとうございます\n5. 市長がご足労になる際は、必ず事前に連絡が入ります"
+        },
+        {
+            "japanese":"来る",
+            "chinese":"参る",
+            "part of speech":"謙譲語",
+            "example sentence":"明日の会議には私もまいります"
+        },
+        {
+            "japanese":"行く",
+            "chinese":"いらっしゃる, おいでになる",
+            "part of speech":"敬語",
+            "example sentence":"1. お客様の再びいらっしゃることを期待いたします\n2. 今日社長は神舎へ参りにおいでになる予定です"
+        },
+        {
+            "japanese":"行く",
+            "chinese":"伺う, 参る",
+            "part of speech":"謙譲語",
+            "example sentence":"1. 今度はぜひ御社にうかがわせていただきます\n2. この度は貴社に参る機会は本当にありがたいです"
+        },
+        {
+            "japanese":"",
+            "chinese":"",
+            "part of speech":"",
+            "example sentence":""
+        },
+        {
+            "japanese":"",
+            "chinese":"",
+            "part of speech":"",
+            "example sentence":""
+        },
+        {
+            "japanese":"",
+            "chinese":"",
+            "part of speech":"",
+            "example sentence":""
+        },
+        {
+            "japanese":"",
+            "chinese":"",
+            "part of speech":"",
+            "example sentence":""
+        },
+        {
+            "japanese":"",
+            "chinese":"",
+            "part of speech":"",
+            "example sentence":""
+        }
+    ]
+}
