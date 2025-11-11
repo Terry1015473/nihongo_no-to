@@ -35,46 +35,58 @@
             "example sentence":"1. 仕事のお付き合いで、飲み会に参加することになります\n2. これを機に今後ともお付き合いを、どうぞよろしくお願いいたします"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"来館者証 らいかんしゃしょう",
+            "chinese":"來賓證、參觀者證",
+            "part of speech":"名詞",
+            "example sentence":"本日の会社観覧には、只今配ってきた来館者証を自分の服につけてください"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"右手 みぎて",
+            "chinese":"右手、右側",
+            "part of speech":"名詞",
+            "example sentence":"(動物園中)今右手側に通り過ぎのはこの園地が特にいる羊だよ"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"インターホン",
+            "chinese":"對講機",
+            "part of speech":"名詞",
+            "example sentence":"後ほど何かご不明とかあったらインターホンで聞いても大丈夫です"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"面会 めんかい",
+            "chinese":"會面、會見",
+            "part of speech":"名詞",
+            "example sentence":"今の社会は以前のような単純じゃないから、見知らぬ人との面会が危ないになっています"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"全く まったく",
+            "chinese":"完全地",
+            "part of speech":"副詞",
+            "example sentence":"日本語の勉強が始めるときに、文法や単語を使い間違うのが多いですね"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"ニュアンス nuance",
+            "chinese":"語感、語氣、語言上的細微差別",
+            "part of speech":"名詞",
+            "example sentence":"日本語と中国語では同じな表現でもニュアンスが異なることがありますよ"
         },
         {
-            "japanese":"",
-            "chinese":"",
-            "part of speech":"",
-            "example sentence":""
+            "japanese":"長居をする ながいをする",
+            "chinese":"久坐",
+            "part of speech":"慣用表現",
+            "example sentence":"長居をするのは健康にちょっと有害ですよね"
+        },
+        {
+            "japanese":"引き止める ひきとめる",
+            "chinese":"挽留",
+            "part of speech":"他動詞",
+            "example sentence":"飲み会でもともと帰ろうと思ったけど、みんなに引き留められたのでもっと1時間飲みました"
+        },
+        {
+            "japanese":"わざわざ",
+            "chinese":"特意",
+            "part of speech":"副詞",
+            "example sentence":"この度御社からわざわざご連絡をいただき、誠にありがとうございます"
         },
         {
             "japanese":"",
